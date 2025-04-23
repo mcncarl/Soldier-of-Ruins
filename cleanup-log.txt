@@ -1,0 +1,16 @@
+删除游戏ID列表:
+- cookie-clicker
+- classic-tetris
+- snake-battle
+- chess-game
+- kart-racing
+- tower-blocks
+- ski-game
+- space-invaders
+- 3d-racing-mini
+- retro-asteroids
+- zombie-shooter
+- block-puzzle
+- endless-runner
+- pixel-coloring
+- tower-builder

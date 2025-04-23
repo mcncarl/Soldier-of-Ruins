@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details | NeXuS - High Quality HTML5 Games Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="games-data.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800&family=Audiowide&family=Exo:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary: #6200EA;
+            --secondary: #03DAC6;
+            --accent: #FF3D71;
+            --dark: #111827;
+            --light: #f3f4f6;
+            --background: #0F1225;
+            --surface: #1E1E2E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B3B3BC;
+        }
+        
+        body {
+            font-family: 'Exo', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            background-image: 
+                radial-gradient(circle at 25px 25px, rgba(98, 0, 234, 0.07) 2%, transparent 0%),
+                radial-gradient(circle at 75px 75px, rgba(3, 218, 198, 0.05) 2%, transparent 0%);
+            background-size: 100px 100px;
+            overflow-x: hidden;
+        }
+        
+        .title-font {
+            font-family: 'Audiowide', cursive;
+        }
+        
+        .heading-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .body-font {
+            font-family: 'Exo', sans-serif;
+        }
+        
+        .tech-border {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tech-border::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, var(--secondary), transparent);
+        }
+        
+        .cyber-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .cyber-btn::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, transparent, var(--secondary), transparent);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: bottom right;
+        }
+        
+        .cyber-btn:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 15px rgba(98, 0, 234, 0.5), 0 0 30px rgba(3, 218, 198, 0.3);
+        }
+        
+        .neo-brutalism {
+            box-shadow: 4px 4px 0 var(--secondary);
+        }
+        
+        .game-detail-card {
+            background: rgba(30, 30, 46, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .control-item {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+        }
+        
+        .control-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: rgba(99, 102, 241, 0.2);
+            border: 1px solid rgba(99, 102, 241, 0.5);
+            border-radius: 4px;
+        }
+        
+        .control-item:after {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6366f1;
+            font-size: 12px;
+        }
+        
+        .similar-game-card {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            background: rgba(30, 30, 46, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .similar-game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(98, 0, 234, 0.15), 0 5px 15px rgba(3, 218, 198, 0.1);
+            border: 1px solid rgba(98, 0, 234, 0.3);
+        }
+        
+        .game-feature {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+        }
+        
+        .game-feature:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: rgba(99, 102, 241, 0.2);
+            border: 1px solid rgba(99, 102, 241, 0.5);
+            border-radius: 4px;
+        }
+        
+        .game-feature:after {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6366f1;
+            font-size: 12px;
+        }
+        
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+        
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Responsive iframe styles */
+        @media (max-width: 768px) {
+            .iframe-container {
+                padding-bottom: 75%; /* Slightly higher ratio on mobile devices */
+            }
+        }
+
+        /* Responsive iframe styles */
+        .responsive-iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        @media (max-width: 640px) {
+            .responsive-iframe-container {
+                padding-bottom: 75%; /* Higher ratio on mobile devices */
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="bg-gray-900 bg-opacity-80 backdrop-blur-sm border-b border-purple-600/30 sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <a href="index.html" class="text-2xl font-bold text-white title-font glow-text">
+                        <span class="text-purple-400">Ne</span><span class="text-teal-400">X</span><span class="text-purple-400">uS</span>
+                    </a>
+                    <div class="hidden md:flex ml-2 space-x-1" id="game-type-badges">
+                        <!-- Game type badges will be added dynamically in JS -->
+                    </div>
+                </div>
+                <nav class="flex mt-4 md:mt-0 space-x-6">
+                    <a href="index.html" class="cyber-btn text-white hover:text-teal-400 transition-colors heading-font">Home</a>
+                    <a href="#" class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Explore</a>
+                    <a href="#" class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">New Games</a>
+                    <a href="#" class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Popular</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Breadcrumb navigation -->
+        <div class="mb-6 flex items-center text-sm text-gray-400">
+            <a href="index.html" class="hover:text-purple-400">Home</a>
+            <span class="mx-2">/</span>
+            <a href="index.html" class="hover:text-purple-400">Games</a>
+            <span class="mx-2">/</span>
+            <span class="text-indigo-400" id="game-title-breadcrumb">Loading...</span>
+        </div>
+        
+        <!-- Game title section -->
+        <div class="mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end">
+                <div>
+                    <div class="flex items-center">
+                        <span id="game-category" class="bg-gray-900/80 text-indigo-400 text-xs px-2 py-1 rounded backdrop-blur-sm border border-indigo-500/30 mr-2">
+                            Loading...
+                        </span>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <span id="game-rating" class="ml-1 text-gray-300">0.0</span>
+                        </div>
+                    </div>
+                    <h1 id="game-title" class="text-4xl font-bold text-white mt-2 heading-font glow-text">Loading...</h1>
+                    <p id="game-tagline" class="text-lg text-gray-300 mt-2">Loading...</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex space-x-3">
+                    <button class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded neo-brutalism transition-all hover:-translate-y-1 heading-font flex items-center">
+                        <i class="fas fa-heart mr-2"></i> Favorite
+                    </button>
+                    <button class="px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded neo-brutalism transition-all hover:-translate-y-1 heading-font flex items-center">
+                        <i class="fas fa-share-alt mr-2"></i> Share
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Game content -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Main content -->
+            <div class="lg:col-span-2">
+                <!-- Game Iframe -->
+                <div class="game-detail-card rounded-xl overflow-hidden mb-6">
+                    <div class="iframe-container">
+                        <iframe id="game-iframe" src="about:blank" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <!-- Game description -->
+                <div class="game-detail-card rounded-xl p-6 mb-6">
+                    <h2 class="text-xl font-bold text-white mb-4 heading-font">Game Details</h2>
+                    <p id="game-description" class="text-gray-300 mb-4">
+                        Loading...
+                    </p>
+                    <p id="game-long-description" class="text-gray-300 mb-4">
+                        Loading...
+                    </p>
+                    <h3 class="text-lg font-semibold text-white mt-6 mb-3 heading-font">Game Features</h3>
+                    <ul id="game-features" class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
+                        <li class="game-feature">Loading...</li>
+                    </ul>
+                </div>
+                
+                <!-- Game gameplay and tips -->
+                <div class="game-detail-card rounded-xl p-6 mb-6">
+                    <h2 class="text-xl font-bold text-white mb-4 heading-font">Gameplay</h2>
+                    <p id="game-gameplay" class="text-gray-300 mb-6">
+                        Loading...
+                    </p>
+                    
+                    <h3 class="text-lg font-semibold text-white mt-6 mb-3 heading-font">Game Tips</h3>
+                    <ul id="game-tips" class="space-y-3">
+                        <li class="flex">
+                            <span class="text-indigo-400 mr-2"><i class="fas fa-lightbulb"></i></span>
+                            <span>Loading...</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <!-- Game controls -->
+                <div class="game-detail-card rounded-xl p-6 mb-6">
+                    <h2 class="text-xl font-bold text-white mb-4 heading-font">Game Controls</h2>
+                    <ul id="game-controls" class="space-y-3">
+                        <li class="control-item">Loading...</li>
+                    </ul>
+                </div>
+                
+                <!-- Game information -->
+                <div class="game-detail-card rounded-xl p-6 mb-6">
+                    <h2 class="text-xl font-bold text-white mb-4 heading-font">Game Information</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-gray-400 block">Developer</span>
+                            <span id="game-developer" class="text-gray-200">Loading...</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-400 block">Release Date</span>
+                            <span id="game-release-date" class="text-gray-200">Loading...</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-400 block">Genre</span>
+                            <span id="game-genre" class="text-gray-200">Loading...</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-400 block">Platforms</span>
+                            <span id="game-platforms" class="text-gray-200">Loading...</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-400 block">Age Rating</span>
+                            <span id="game-age-rating" class="text-gray-200">Loading...</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-400 block">Languages</span>
+                            <span id="game-languages" class="text-gray-200">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Similar games -->
+                <div class="game-detail-card rounded-xl p-6">
+                    <h2 class="text-xl font-bold text-white mb-4 heading-font">Recommended Games</h2>
+                    <div id="similar-games-container" class="space-y-4">
+                        <div class="similar-game-card p-3 rounded-lg flex items-center">
+                            <div class="w-20 h-20 bg-gray-700 rounded animate-pulse"></div>
+                            <div class="ml-3 w-full">
+                                <div class="h-4 bg-gray-700 rounded w-3/4 mb-2 animate-pulse"></div>
+                                <div class="h-3 bg-gray-700 rounded w-1/2 animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 bg-opacity-80 backdrop-blur-sm border-t border-purple-600/30 mt-12">
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <div class="text-center">
+                <div class="text-xl font-bold title-font mb-4">
+                    <span class="text-purple-400">Ne</span><span class="text-teal-400">X</span><span class="text-purple-400">uS</span>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 NeXuS. All rights reserved. Best HTML5 web games platform.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get game ID from URL parameters
+            const params = new URLSearchParams(window.location.search);
+            const gameId = params.get('id');
+            
+            if (!gameId) {
+                alert('Game ID not specified, returning to homepage.');
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Get game data from games-data.js
+            const game = getGameById(gameId);
+            
+            if (!game) {
+                // Create custom error modal instead of using alert
+                const errorModal = document.createElement('div');
+                errorModal.className = 'fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50';
+                errorModal.innerHTML = `
+                    <div class="bg-gray-800 p-6 rounded-lg max-w-md w-full border border-purple-500/30">
+                        <h2 class="text-xl font-bold text-white mb-4 heading-font">Game Not Found / Game Not Found</h2>
+                        <p class="text-gray-300 mb-6">The specified game ID "${gameId}"does not exist or has been removed. Returning to homepage.<br><br>The specified game ID "${gameId}" does not exist or has been removed. Returning to homepage.</p>
+                        <div class="flex justify-end">
+                            <button id="errorOkBtn" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded transition-all heading-font">OK / OK</button>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(errorModal);
+                
+                // Add event listener to OK button
+                document.getElementById('errorOkBtn').addEventListener('click', function() {
+                    window.location.href = 'index.html';
+                });
+                
+                // Auto redirect after 5 seconds
+                setTimeout(() => {
+                window.location.href = 'index.html';
+                }, 5000);
+                
+                return;
+            }
+
+            // Update page title
+            document.title = `${game.title} | NeXuS - High Quality HTML5 Games Portal`;
+            
+            // Update breadcrumb navigation
+            document.getElementById('game-title-breadcrumb').textContent = game.title;
+            
+            // Update game type badges
+            const gameTypeBadges = document.getElementById('game-type-badges');
+            gameTypeBadges.innerHTML = '';
+            
+            if (game.type === '3d') {
+                gameTypeBadges.innerHTML = '<span class="text-xs py-1 px-2 bg-purple-900/50 rounded-md border border-purple-500/20">3D</span>';
+            } else {
+                gameTypeBadges.innerHTML = '<span class="text-xs py-1 px-2 bg-blue-600/50 rounded-md border border-blue-500/20">2D</span>';
+            }
+            
+            // Update game title section
+            document.getElementById('game-title').textContent = game.title;
+            document.getElementById('game-tagline').textContent = game.tagline;
+            document.getElementById('game-rating').textContent = game.rating;
+            
+            // Update game category
+            const categoryElement = document.getElementById('game-category');
+            categoryElement.textContent = getCategoryDisplayName(game.category);
+            categoryElement.className = `bg-gray-900/80 text-${getCategoryColor(game.category)}-400 text-xs px-2 py-1 rounded backdrop-blur-sm border border-${getCategoryColor(game.category)}-500/30 mr-2`;
+            
+            // Update game iframe
+            document.getElementById('game-iframe').src = game.iframe;
+            
+            // Update game description
+            document.getElementById('game-description').textContent = game.description;
+            document.getElementById('game-long-description').textContent = game.longDescription;
+            
+            // Update game features
+            const featuresContainer = document.getElementById('game-features');
+            featuresContainer.innerHTML = '';
+            
+            game.features.forEach(feature => {
+                const li = document.createElement('li');
+                li.className = 'game-feature';
+                li.textContent = feature;
+                featuresContainer.appendChild(li);
+            });
+            
+            // Update gameplay
+            document.getElementById('game-gameplay').textContent = game.gameplayDescription;
+            
+            // Update game tips
+            const tipsContainer = document.getElementById('game-tips');
+            tipsContainer.innerHTML = '';
+            
+            game.tips.forEach(tip => {
+                const li = document.createElement('li');
+                li.className = 'flex';
+                li.innerHTML = `
+                    <span class="text-indigo-400 mr-2"><i class="fas fa-lightbulb"></i></span>
+                    <span>${tip}</span>
+                `;
+                tipsContainer.appendChild(li);
+            });
+            
+            // Update game controls
+            const controlsContainer = document.getElementById('game-controls');
+            controlsContainer.innerHTML = '';
+            
+            game.controls.forEach(control => {
+                const li = document.createElement('li');
+                li.className = 'control-item';
+                li.textContent = control;
+                controlsContainer.appendChild(li);
+            });
+            
+            // Update game information
+            document.getElementById('game-developer').textContent = game.developer;
+            document.getElementById('game-release-date').textContent = game.releaseDate;
+            document.getElementById('game-genre').textContent = game.genre;
+            document.getElementById('game-platforms').textContent = game.platforms;
+            document.getElementById('game-age-rating').textContent = game.ageRating;
+            document.getElementById('game-languages').textContent = game.languages;
+            
+            // Update similar games
+            const similarGamesContainer = document.getElementById('similar-games-container');
+            similarGamesContainer.innerHTML = '';
+
+            if (game.similarGames && game.similarGames.length > 0) {
+                game.similarGames.forEach(similarGame => {
+                    const gameCard = document.createElement('a');
+                    gameCard.href = `game.html?id=${similarGame.id}`;
+                    gameCard.className = 'similar-game-card p-3 rounded-lg flex items-center';
+                    
+                    gameCard.innerHTML = `
+                        <img src="${similarGame.thumbnail}" alt="${similarGame.title}" class="w-20 h-20 object-cover rounded">
+                        <div class="ml-3">
+                            <h3 class="text-white font-medium">${similarGame.title}</h3>
+                                <div class="flex items-center">
+                                <span class="text-sm text-${getCategoryColor(similarGame.category)}-400">${getCategoryDisplayName(similarGame.category)}</span>
+                                <div class="ml-auto flex items-center">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <span class="text-xs ml-1">${similarGame.rating}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    similarGamesContainer.appendChild(gameCard);
+                });
+            } else {
+                const noSimilarGames = document.createElement('p');
+                noSimilarGames.className = 'text-gray-400 text-center py-4';
+                noSimilarGames.textContent = 'No recommended games available';
+                similarGamesContainer.appendChild(noSimilarGames);
+            }
+        });
+        
+        // Helper function for category display names
+        function getCategoryDisplayName(category) {
+            const categoryNames = {
+                'action': 'Action Games',
+                'adventure': 'Adventure Games',
+                'shooter': 'Shooter Games',
+                'racing': 'Racing Games',
+                'exploration': 'Exploration Games',
+                'sandbox': 'Sandbox Games',
+                'arcade': 'Arcade Games',
+                'puzzle': 'Puzzle Games',
+                'sports': 'Sports Games',
+                'strategy': 'Strategy Games',
+                'idle': 'Idle Games',
+                'simulation': 'Simulation Games',
+                'all': 'All Games'
+            };
+            
+            return categoryNames[category] || category;
+        }
+    </script>
+</body>
+</html> 

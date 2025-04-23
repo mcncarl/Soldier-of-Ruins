@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Button Rougelite! - 3D Games Portal</title>
+    <meta name="description" content="Play One Button Rougelite!, A Rouge lite controlled with just one button or touch tap! Unlock abilities that give use to the pressing, releasing, holding or not pressing the button at all!. Experience this immersive 3D game on 3D Games Portal.">
+    <link rel="canonical" href="https://soldierruins.online/one-button-rougelite-.html" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f7;
+        }
+        .game-container {
+            aspect-ratio: 16/9;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Title Styling */
+        .section-title {
+            position: relative;
+            color: #2563eb;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #2563eb, #4f46e5);
+            border-radius: 3px;
+        }
+        
+        .subtitle {
+            color: #4f46e5;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+        
+        /* Special Effects�?*/
+        .hover-lift {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-3px);
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease;
+        }
+        
+        .feature-item:hover {
+            background-color: #f1f5fd;
+        }
+        
+        .feature-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+            border-radius: 50%;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+        
+        .tip-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #f59e0b, #fcd34d);
+            color: white;
+            border-radius: 50%;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+        
+        .game-section {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .game-section:hover {
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 8px 10px -6px rgba(59, 130, 246, 0.1);
+        }
+        
+        .description-text {
+            font-weight: 500;
+            line-height: 1.7;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
+                <div class="text-2xl font-bold text-gray-900">3D Games Portal</div>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-600 hover:text-gray-900 flex items-center">
+                            Categories <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden group-hover:block">
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">3D Adventure</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">3D Action</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">3D Puzzle</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">3D Simulation</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">3D RPG</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">New Games</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Popular</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Breadcrumb -->
+        <nav class="flex mb-6" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-home mr-2"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <i class="fas fa-chevron-right text-gray-400 mx-2 text-sm"></i>
+                        <a href="#" class="text-sm font-medium text-gray-700 hover:text-blue-600">3D Adventure</a>
+                    </div>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <i class="fas fa-chevron-right text-gray-400 mx-2 text-sm"></i>
+                        <span class="text-sm font-medium text-gray-500">One Button Rougelite!</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Game Header -->
+        <section class="bg-white rounded-xl shadow-md overflow-hidden mb-8 game-section">
+            <div class="p-6 md:p-8">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 mb-6 md:mb-0 md:mr-8">
+                        <img class="h-48 w-full md:w-64 object-cover rounded-lg shadow-md hover-lift" src="https://img.itch.zone/aW1nLzE1MjM5NDYwLnBuZw==/315x250%23c/7mQrlf.png" alt="One Button Rougelite!">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center mb-3">
+                            <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 mr-3">One Button Rougelite!</h1>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Adventure</span>
+                        </div>
+                        <p class="text-gray-600 mb-5 description-text">A Rouge lite controlled with just one button or touch tap! Unlock abilities that give use to the pressing, releasing, holding or not pressing the button at all!</p>
+                        
+                        <div class="flex flex-wrap gap-4 mb-6">
+                            <div class="flex items-center bg-blue-50 px-3 py-1 rounded-full">
+                                <i class="fas fa-user text-blue-500 mr-1"></i>
+                                <span>By: LykkeTil</span>
+                            </div>
+                            <div class="flex items-center bg-blue-50 px-3 py-1 rounded-full">
+                                <i class="fas fa-gamepad text-blue-500 mr-1"></i>
+                                <span>3D Game</span>
+                            </div>
+                            <div class="flex items-center bg-blue-50 px-3 py-1 rounded-full">
+                                <i class="fas fa-globe text-blue-500 mr-1"></i>
+                                <span>Browser Game</span>
+                            </div>
+                        </div>
+                        
+                        <button class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all mr-3 shadow-md hover-lift">
+                            <i class="fas fa-play mr-2"></i> Play Now
+                        </button>
+                        <button class="inline-flex items-center px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all shadow-sm hover-lift">
+                            <i class="fas fa-bookmark mr-2"></i> Save to Favorites
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Container -->
+        <section id="game" class="mb-8">
+            <h2 class="text-2xl font-bold mb-5 section-title">Play Game</h2>
+            <div class="game-container bg-white rounded-lg shadow-lg overflow-hidden game-section">
+                <iframe 
+                    src="https://itch.io/embed/game/one-button-rougelite" 
+                    class="w-full h-full border-0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- About the Game -->
+        <section id="about" class="bg-white rounded-xl shadow-md overflow-hidden mb-8 p-6 game-section">
+            <h2 class="text-2xl font-bold mb-5 section-title">About the Game</h2>
+            <p class="description-text mb-6">A Rouge lite controlled with just one button or touch tap! Unlock abilities that give use to the pressing, releasing, holding or not pressing the button at all!</p>
+            
+            <h3 class="text-xl font-bold mb-4 mt-6 subtitle">Features</h3>
+            <ul class="space-y-2 mb-4">
+                <li class="feature-item">
+                    <span class="feature-icon"><i class="fas fa-check text-xs"></i></span>
+                    <span class="description-text">Immersive 3D graphics and gameplay</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon"><i class="fas fa-check text-xs"></i></span>
+                    <span class="description-text">Browser-based - no downloads required</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon"><i class="fas fa-check text-xs"></i></span>
+                    <span class="description-text">Created by LykkeTil</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon"><i class="fas fa-check text-xs"></i></span>
+                    <span class="description-text">Compatible with all modern browsers</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon"><i class="fas fa-check text-xs"></i></span>
+                    <span class="description-text">Responsive design for different screen sizes</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">3D Games Portal</h3>
+                    <p class="text-gray-600">The best destination for free online 3D games. Play instantly in your browser!</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">3D Adventure</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">3D Action</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">3D Puzzle</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">3D Simulation</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">3D RPG</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">New Games</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Popular Games</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t mt-8 pt-8 text-center text-gray-600">
+                <p>&copy; 2024 3D Games Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Play Now button functionality
+            const playNowBtn = document.querySelector('.from-blue-600');
+            playNowBtn.addEventListener('click', function() {
+                // Smooth scroll to game section
+                document.getElementById('game').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            });
+            
+            // Favorites button functionality
+            const favBtn = document.querySelector('.bg-gray-100');
+            favBtn.addEventListener('click', function() {
+                alert('Game saved to favorites!');
+                this.innerHTML = '<i class="fas fa-bookmark mr-2"></i> Saved to Favorites';
+                this.classList.add('bg-yellow-100', 'text-yellow-700');
+                this.classList.remove('bg-gray-100', 'text-gray-700');
+            });
+        });
+    </script>
+</body>
+</html> 
