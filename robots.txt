@@ -1,0 +1,23 @@
+# NeXuS - HTML5 Games Portal
+# https://nexus-games.example.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nexus-games.example.com/sitemap.xml
+
+# Crawl delay (optional, be nice to servers)
+Crawl-delay: 1
+
+# Block access to admin or development files
+Disallow: /node_modules/
+Disallow: /*.js$
+Disallow: /package*.json
+Disallow: /.git/
+Disallow: /.gitignore
+
+# Allow game pages
+Allow: /index.html
+Allow: /game.html
+Allow: /games/

@@ -1,27 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeXuS - High Quality HTML5 Games Portal</title>
+    <title>NeXuS - High Quality HTML5 Games Portal | Play Free 2D & 3D Games Online</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Play 100+ free HTML5 games online! NeXuS offers high-quality 2D and 3D browser games - arcade, puzzle, racing & adventure. No download needed.">
+    <meta name="keywords"
+        content="HTML5 games, free online games, 2D games, 3D games, browser games, arcade games, puzzle games, racing games, WebGL games, play games online">
+    <meta name="author" content="NeXuS Games">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nexus-games.example.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexus-games.example.com/">
+    <meta property="og:title" content="NeXuS - High Quality HTML5 Games Portal">
+    <meta property="og:description"
+        content="Play the best free HTML5 games online! 100+ high-quality 2D and 3D browser games. No download required.">
+    <meta property="og:image" content="https://nexus-games.example.com/og-image.jpg">
+    <meta property="og:site_name" content="NeXuS Games">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://nexus-games.example.com/">
+    <meta name="twitter:title" content="NeXuS - High Quality HTML5 Games Portal">
+    <meta name="twitter:description"
+        content="Play the best free HTML5 games online! 100+ high-quality 2D and 3D browser games.">
+    <meta name="twitter:image" content="https://nexus-games.example.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    <link rel="apple-touch-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34PXPKXXLH"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-34PXPKXXLH');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-34PXPKXXLH');
     </script>
-    <meta name="description" content="Discover and experience the best HTML5 web games, including 2D and 3D games, featuring immersive graphics and engaging gameplay. NeXuS - Your online gaming paradise.">
+
+    <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' *;">
     <meta http-equiv="X-Frame-Options" content="ALLOWALL">
+
+    <!-- Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:wght@300;400;600;700&family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="games-data.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:wght@300;400;600;700&family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Game Data -->
+    <script src="games-data.js" defer></script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "NeXuS Games",
+        "alternateName": "NeXuS HTML5 Games Portal",
+        "url": "https://nexus-games.example.com/",
+        "description": "Play the best free HTML5 games online. High-quality 2D and 3D browser games.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://nexus-games.example.com/?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "NeXuS Games",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://nexus-games.example.com/logo.png"
+            }
+        }
+    }
+    </script>
     <style>
         :root {
             --primary: #6200EA;
@@ -36,71 +107,71 @@
             --text-primary: #FFFFFF;
             --text-secondary: #B3B3BC;
         }
-        
+
         body {
             font-family: 'Exo', sans-serif;
             background-color: var(--background);
             color: var(--text-primary);
-            background-image: 
+            background-image:
                 radial-gradient(circle at 25px 25px, rgba(98, 0, 234, 0.07) 2%, transparent 0%),
                 radial-gradient(circle at 75px 75px, rgba(3, 218, 198, 0.05) 2%, transparent 0%);
             background-size: 100px 100px;
             overflow-x: hidden;
         }
-        
+
         .title-font {
             font-family: 'Audiowide', cursive;
         }
-        
+
         .heading-font {
             font-family: 'Orbitron', sans-serif;
         }
-        
+
         .body-font {
             font-family: 'Exo', sans-serif;
         }
-        
+
         .game-card {
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             background: rgba(30, 30, 46, 0.7);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        
+
         .game-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(98, 0, 234, 0.15), 0 5px 15px rgba(3, 218, 198, 0.1);
             border: 1px solid rgba(98, 0, 234, 0.3);
         }
-        
+
         .neo-brutalism {
             box-shadow: 4px 4px 0 var(--secondary);
         }
-        
+
         .category-button {
             transition: all 0.2s ease;
             border: 2px solid transparent;
         }
-        
+
         .category-button:hover {
             transform: translateY(-2px);
             border: 2px solid var(--secondary);
         }
-        
+
         .glow-text {
             text-shadow: 0 0 15px rgba(98, 0, 234, 0.5), 0 0 30px rgba(3, 218, 198, 0.3);
         }
-        
+
         .hero-gradient {
             background: linear-gradient(135deg, rgba(98, 0, 234, 0.8) 0%, rgba(3, 218, 198, 0.8) 100%);
         }
-        
+
         /* Futuristic details */
         .tech-border {
             position: relative;
             overflow: hidden;
         }
-        
+
         .tech-border::before {
             content: '';
             position: absolute;
@@ -110,13 +181,13 @@
             height: 100%;
             background: linear-gradient(to bottom, transparent, var(--secondary), transparent);
         }
-        
+
         .cyber-btn {
             position: relative;
             overflow: hidden;
             transition: all 0.3s ease;
         }
-        
+
         .cyber-btn::after {
             content: '';
             position: absolute;
@@ -129,29 +200,30 @@
             transition: transform 0.3s ease;
             transform-origin: bottom right;
         }
-        
+
         .cyber-btn:hover::after {
             transform: scaleX(1);
             transform-origin: bottom left;
         }
-        
+
         .glow-border {
             box-shadow: 0 0 15px rgba(3, 218, 198, 0.3);
         }
-        
+
         .pulse-bg {
             animation: pulseBg 5s infinite alternate;
         }
-        
+
         @keyframes pulseBg {
             0% {
                 background-position: 0% 50%;
             }
+
             100% {
                 background-position: 100% 50%;
             }
         }
-        
+
         /* Advanced background */
         .constellation {
             position: absolute;
@@ -163,19 +235,24 @@
             overflow: hidden;
             z-index: 0;
         }
-        
+
         .star {
             position: absolute;
             background-color: rgba(255, 255, 255, 0.7);
             border-radius: 50%;
             animation: twinkle 4s infinite alternate;
         }
-        
+
         @keyframes twinkle {
-            0% { opacity: 0.3; }
-            100% { opacity: 1; }
+            0% {
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
-        
+
         .line {
             position: absolute;
             height: 1px;
@@ -183,12 +260,17 @@
             animation: pulse 5s infinite alternate;
             transform-origin: left center;
         }
-        
+
         @keyframes pulse {
-            0% { opacity: 0.1; }
-            100% { opacity: 0.5; }
+            0% {
+                opacity: 0.1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
         }
-        
+
         .category-btn.active {
             background-color: rgba(98, 0, 234, 0.3);
             border-color: var(--primary);
@@ -205,39 +287,46 @@
             background-color: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(4px);
         }
-        
+
         .type-2d {
             color: #38bdf8;
             border: 1px solid #38bdf8;
         }
-        
+
         .type-3d {
             color: #a855f7;
             border: 1px solid #a855f7;
         }
     </style>
 </head>
+
 <body class="min-h-screen relative">
     <!-- Background constellations -->
     <div class="constellation" aria-hidden="true"></div>
-    
+
     <header class="bg-gray-900 bg-opacity-80 backdrop-blur-sm border-b border-purple-600/30 sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 py-3">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center gap-2">
                     <a href="index.html" class="text-2xl font-bold text-white title-font glow-text">
-                        <span class="text-purple-400">Ne</span><span class="text-teal-400">X</span><span class="text-purple-400">uS</span>
+                        <span class="text-purple-400">Ne</span><span class="text-teal-400">X</span><span
+                            class="text-purple-400">uS</span>
                     </a>
                     <div class="hidden md:flex ml-2 space-x-1">
                         <span class="text-xs py-1 px-2 bg-blue-600/50 rounded-md border border-blue-500/20">2D</span>
-                        <span class="text-xs py-1 px-2 bg-purple-900/50 rounded-md border border-purple-500/20">3D</span>
+                        <span
+                            class="text-xs py-1 px-2 bg-purple-900/50 rounded-md border border-purple-500/20">3D</span>
                     </div>
                 </div>
                 <nav class="flex mt-4 md:mt-0 space-x-6">
-                    <a href="index.html" class="cyber-btn text-white hover:text-teal-400 transition-colors heading-font">Home</a>
-                    <a href="#" class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Explore</a>
-                    <a href="#" class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">New Games</a>
-                    <a href="#" class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Popular</a>
+                    <a href="index.html"
+                        class="cyber-btn text-white hover:text-teal-400 transition-colors heading-font">Home</a>
+                    <a href="#"
+                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Explore</a>
+                    <a href="#" class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">New
+                        Games</a>
+                    <a href="#"
+                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Popular</a>
                 </nav>
             </div>
         </div>
@@ -251,7 +340,8 @@
                     <i class="fas fa-gamepad text-purple-400 text-2xl mr-3"></i>
                     <div>
                         <h3 class="text-lg text-white heading-font">Game Statistics</h3>
-                        <p class="text-gray-400 text-sm">Currently <span id="filtered-count" class="text-teal-400 font-bold">0</span> games available</p>
+                        <p class="text-gray-400 text-sm">Currently <span id="filtered-count"
+                                class="text-teal-400 font-bold">0</span> games available</p>
                     </div>
                 </div>
                 <div class="flex gap-4">
@@ -268,7 +358,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Hero Section -->
         <section class="hero-gradient rounded-xl mb-10 overflow-hidden tech-border">
             <div class="p-8 md:p-12 text-center">
@@ -278,14 +368,16 @@
                 <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-8 body-font">
                     Play various exciting 2D and 3D games directly in your browser, no download required.
                 </p>
-                
+
                 <!-- Search Bar -->
                 <div class="max-w-2xl mx-auto">
                     <div class="relative">
-                        <input type="text" id="search-input" placeholder="Search games..." 
+                        <label for="search-input" class="sr-only">Search games</label>
+                        <input type="text" id="search-input" placeholder="Search games..." aria-label="Search for games"
                             class="w-full px-5 py-4 rounded-md shadow-md bg-gray-900/80 border border-purple-500/30 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
-                        <button onclick="searchGames()" class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-md transition-colors">
-                            <i class="fas fa-search"></i>
+                        <button onclick="searchGames()" aria-label="Search"
+                            class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-md transition-colors">
+                            <i class="fas fa-search" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
@@ -295,7 +387,8 @@
         <!-- Recommended Games -->
         <section class="mb-8">
             <div class="max-w-4xl mx-auto">
-                <div class="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-lg p-4 border border-purple-500/40 backdrop-blur-sm shadow-lg shadow-purple-800/10">
+                <div
+                    class="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-lg p-4 border border-purple-500/40 backdrop-blur-sm shadow-lg shadow-purple-800/10">
                     <h3 class="text-lg font-bold text-white mb-3 heading-font flex items-center">
                         <i class="fas fa-cube text-purple-500 mr-2"></i>
                         3D Premium Games
@@ -320,11 +413,14 @@
                 <!-- Game type filters -->
                 <div class="flex items-center border-l border-gray-700 pl-2 ml-2">
                     <span class="text-gray-400 text-sm mr-2">Game Types:</span>
-                    <button class="category-button py-1 px-3 bg-gray-800 hover:bg-gray-700 text-blue-400 rounded-md type-filter active"
+                    <button
+                        class="category-button py-1 px-3 bg-gray-800 hover:bg-gray-700 text-blue-400 rounded-md type-filter active"
                         data-type="all">All</button>
-                    <button class="category-button py-1 px-3 bg-gray-800 hover:bg-gray-700 text-blue-400 rounded-md type-filter"
+                    <button
+                        class="category-button py-1 px-3 bg-gray-800 hover:bg-gray-700 text-blue-400 rounded-md type-filter"
                         data-type="2d">2D Games</button>
-                    <button class="category-button py-1 px-3 bg-gray-800 hover:bg-gray-700 text-purple-400 rounded-md type-filter"
+                    <button
+                        class="category-button py-1 px-3 bg-gray-800 hover:bg-gray-700 text-purple-400 rounded-md type-filter"
                         data-type="3d">3D Games</button>
                 </div>
             </div>
@@ -338,31 +434,38 @@
                 <span class="w-8 h-1 bg-purple-500 inline-block ml-3"></span>
             </h2>
             <div class="grid grid-cols-2 md:grid-cols-7 gap-4">
-                <a href="#" onclick="filterByCategory('all'); return false;" class="category-button bg-gray-800 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-gray-700 transition-all">
+                <a href="#" onclick="filterByCategory('all'); return false;"
+                    class="category-button bg-gray-800 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-gray-700 transition-all">
                     <i class="fas fa-th-large text-2xl mb-2 text-teal-400"></i>
                     <p class="heading-font text-xs">All Categories</p>
                 </a>
-                <a href="#" onclick="filterByCategory('arcade'); return false;" class="category-button bg-purple-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-purple-800/50 transition-all">
+                <a href="#" onclick="filterByCategory('arcade'); return false;"
+                    class="category-button bg-purple-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-purple-800/50 transition-all">
                     <i class="fas fa-gamepad text-2xl mb-2 text-purple-400"></i>
                     <p class="heading-font text-xs">Arcade Games</p>
                 </a>
-                <a href="#" onclick="filterByCategory('puzzle'); return false;" class="category-button bg-blue-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-blue-800/50 transition-all">
+                <a href="#" onclick="filterByCategory('puzzle'); return false;"
+                    class="category-button bg-blue-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-blue-800/50 transition-all">
                     <i class="fas fa-puzzle-piece text-2xl mb-2 text-blue-400"></i>
                     <p class="heading-font text-xs">Puzzle Games</p>
                 </a>
-                <a href="#" onclick="filterByCategory('racing'); return false;" class="category-button bg-yellow-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-yellow-800/50 transition-all">
+                <a href="#" onclick="filterByCategory('racing'); return false;"
+                    class="category-button bg-yellow-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-yellow-800/50 transition-all">
                     <i class="fas fa-car text-2xl mb-2 text-yellow-400"></i>
                     <p class="heading-font text-xs">Racing Games</p>
                 </a>
-                <a href="#" onclick="filterByCategory('shooter'); return false;" class="category-button bg-red-800/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-red-700/50 transition-all">
+                <a href="#" onclick="filterByCategory('shooter'); return false;"
+                    class="category-button bg-red-800/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-red-700/50 transition-all">
                     <i class="fas fa-crosshairs text-2xl mb-2 text-red-300"></i>
                     <p class="heading-font text-xs">Shooter Games</p>
                 </a>
-                <a href="#" onclick="filterByCategory('strategy'); return false;" class="category-button bg-green-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-green-800/50 transition-all">
+                <a href="#" onclick="filterByCategory('strategy'); return false;"
+                    class="category-button bg-green-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-green-800/50 transition-all">
                     <i class="fas fa-chess text-2xl mb-2 text-green-400"></i>
                     <p class="heading-font text-xs">Strategy Games</p>
                 </a>
-                <a href="#" onclick="filterByCategory('idle'); return false;" class="category-button bg-amber-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-amber-800/50 transition-all">
+                <a href="#" onclick="filterByCategory('idle'); return false;"
+                    class="category-button bg-amber-900/50 text-white p-3 rounded-lg text-center hover:shadow-lg hover:bg-amber-800/50 transition-all">
                     <i class="fas fa-hourglass-half text-2xl mb-2 text-amber-400"></i>
                     <p class="heading-font text-xs">Idle Games</p>
                 </a>
@@ -380,7 +483,7 @@
                     View All <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
-            
+
             <div id="games-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Games will be loaded here -->
             </div>
@@ -391,10 +494,11 @@
         <div class="max-w-7xl mx-auto px-4 py-8">
             <div class="text-center">
                 <div class="text-xl font-bold title-font mb-4">
-                    <span class="text-purple-400">Ne</span><span class="text-teal-400">X</span><span class="text-purple-400">uS</span>
+                    <span class="text-purple-400">Ne</span><span class="text-teal-400">X</span><span
+                        class="text-purple-400">uS</span>
                 </div>
                 <p class="text-gray-400 text-sm">
-                    &copy; 2024 NeXuS. All rights reserved. Best HTML5 web games platform.
+                    &copy; 2025 NeXuS. All rights reserved. Best HTML5 web games platform.
                 </p>
             </div>
         </div>
@@ -402,12 +506,12 @@
 
     <script>
         // Create constellation background
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const constellation = document.querySelector('.constellation');
             const width = window.innerWidth;
             const height = window.innerHeight;
             const starCount = Math.floor(width * height / 15000); // Adjust density as needed
-            
+
             // Create stars
             for (let i = 0; i < starCount; i++) {
                 const star = document.createElement('div');
@@ -419,71 +523,71 @@
                 star.style.animationDelay = Math.random() * 4 + 's';
                 constellation.appendChild(star);
             }
-            
+
             // Connect some stars with lines
             const lineCount = starCount / 5;
             const stars = constellation.querySelectorAll('.star');
-            
+
             for (let i = 0; i < lineCount; i++) {
                 const starIndex1 = Math.floor(Math.random() * stars.length);
                 const starIndex2 = Math.floor(Math.random() * stars.length);
-                
+
                 if (starIndex1 !== starIndex2) {
                     const star1 = stars[starIndex1];
                     const star2 = stars[starIndex2];
-                    
+
                     // Extract positions
                     const x1 = parseFloat(star1.style.left);
                     const y1 = parseFloat(star1.style.top);
                     const x2 = parseFloat(star2.style.left);
                     const y2 = parseFloat(star2.style.top);
-                    
+
                     // Calculate distance
                     const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-                    
+
                     // Only connect nearby stars
                     if (distance < 100) {
                         const line = document.createElement('div');
                         line.className = 'constellation-line';
-                        
+
                         // Position the line at the first star's position
                         line.style.left = x1 + 'px';
                         line.style.top = y1 + 'px';
-                        
+
                         // Calculate length and angle
                         line.style.width = distance + 'px';
                         const angle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
                         line.style.transform = `rotate(${angle}deg)`;
-                        
+
                         constellation.appendChild(line);
                     }
                 }
             }
-            
+
             // Load recommended games
             loadRecommendedGames();
-            
+
             // Load all games
             renderGames();
         });
-        
+
         // Load recommended games (top 6 by rating)
         function loadRecommendedGames() {
             const container = document.getElementById('recommended-games-container');
-            
+
             // First filter all 3D games, then sort by rating and take the top 6
             const topGames = [...gamesData]
                 .filter(game => game.type === '3d')
                 .sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating))
                 .slice(0, 6);
-                
+
             container.innerHTML = '';
-                
+
             topGames.forEach(game => {
                 const gameCard = document.createElement('a');
                 gameCard.href = `game.html?id=${game.id}`;
                 gameCard.className = 'group bg-purple-900/30 rounded-lg p-3 flex items-center gap-3 hover:bg-purple-900/50 transition-all border border-purple-500/30 hover:border-purple-500/70 hover:shadow-lg hover:shadow-purple-500/20';
-                
+
                 gameCard.innerHTML = `
                     <div class="w-16 h-16 rounded overflow-hidden flex-shrink-0 relative">
                         <span class="absolute top-0 left-0 bg-purple-900 text-xs px-1.5 py-0.5 rounded-br text-white font-bold">3D</span>
@@ -501,40 +605,40 @@
                         <i class="fas fa-play text-xs"></i>
                     </div>
                 `;
-                
+
                 container.appendChild(gameCard);
             });
         }
-        
+
         // Variables
         let currentCategory = 'all';
         let currentType = 'all';
         let currentSearch = '';
-        
+
         // Render games
         function renderGames() {
             const container = document.getElementById('games-container');
             container.innerHTML = '';
-            
+
             let filteredGames = [...gamesData];
-            
+
             if (currentType !== 'all') {
                 filteredGames = filteredGames.filter(game => game.type === currentType);
             }
-            
+
             if (currentCategory !== 'all') {
                 filteredGames = filteredGames.filter(game => game.category === currentCategory);
             }
-            
+
             if (currentSearch) {
                 const searchLower = currentSearch.toLowerCase();
-                filteredGames = filteredGames.filter(game => 
-                    game.title.toLowerCase().includes(searchLower) || 
+                filteredGames = filteredGames.filter(game =>
+                    game.title.toLowerCase().includes(searchLower) ||
                     game.description.toLowerCase().includes(searchLower) ||
                     game.tagline.toLowerCase().includes(searchLower)
                 );
             }
-            
+
             // Update heading
             let headingText = 'Featured Games';
             if (currentType !== 'all' && currentCategory !== 'all') {
@@ -544,33 +648,33 @@
             } else if (currentCategory !== 'all') {
                 headingText = getCategoryDisplayName(currentCategory);
             }
-            
-            document.getElementById('games-heading').innerHTML = 
+
+            document.getElementById('games-heading').innerHTML =
                 `<span class="w-8 h-1 bg-teal-500 inline-block mr-3"></span>${headingText}`;
-            
+
             // Display filtered count
             const countElement = document.getElementById('filtered-count');
             if (countElement) {
                 countElement.textContent = filteredGames.length;
             }
-            
+
             // Create game cards
             if (filteredGames.length === 0) {
                 container.innerHTML = '<div class="col-span-3 text-center py-10 bg-gray-800/50 rounded-lg"><p class="text-gray-400">No games found</p></div>';
                 return;
             }
-            
+
             filteredGames.forEach(game => {
                 const card = document.createElement('div');
                 card.className = 'game-card rounded-xl overflow-hidden glow-border';
                 card.dataset.category = game.category;
                 card.dataset.type = game.type;
-                
+
                 // Get fallback image URL (based on type and category)
-                const fallbackImageUrl = game.type === '3d' 
+                const fallbackImageUrl = game.type === '3d'
                     ? `https://placehold.co/600x400/${getCategoryColor(game.category) === 'purple' ? '8b5cf6' : '3b82f6'}/ffffff?text=3D+${game.category.charAt(0).toUpperCase() + game.category.slice(1)}`
                     : `https://placehold.co/600x400/${getCategoryColor(game.category) === 'blue' ? '38bdf8' : '8b5cf6'}/ffffff?text=2D+${game.category.charAt(0).toUpperCase() + game.category.slice(1)}`;
-                
+
                 card.innerHTML = `
                     <div class="relative overflow-hidden">
                         <img src="${game.thumbnail}" alt="${game.title}" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110" onerror="this.src='${fallbackImageUrl}'">
@@ -606,7 +710,7 @@
                 `;
                 container.appendChild(card);
             });
-            
+
             // Update the filtered games count
             updateFilteredCount();
         }
@@ -618,7 +722,7 @@
             document.getElementById('search-input').value = '';
             renderGames();
         }
-        
+
         // Filter by type (2d/3d)
         function filterByType(type) {
             currentType = type;
@@ -635,7 +739,7 @@
         }
 
         // Search with Enter key
-        document.getElementById('search-input').addEventListener('keyup', function(e) {
+        document.getElementById('search-input').addEventListener('keyup', function (e) {
             if (e.key === 'Enter') {
                 searchGames();
             }
@@ -658,7 +762,7 @@
             };
             return colors[category] || 'purple';
         }
-        
+
         // Helper function for category display names
         function getCategoryDisplayName(category) {
             const categoryNames = {
@@ -676,15 +780,15 @@
                 'simulation': 'Simulation Games',
                 'all': 'All Games'
             };
-            
+
             return categoryNames[category] || category;
         }
 
         // Game filtering
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Add event listeners for category buttons
             document.querySelectorAll('.category-button').forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     // If it's a category filter
                     if (!this.classList.contains('type-filter')) {
                         document.querySelectorAll('.category-button:not(.type-filter)').forEach(btn => {
@@ -692,13 +796,13 @@
                             btn.classList.remove('bg-purple-700');
                             btn.classList.add('bg-gray-800');
                         });
-                        
+
                         this.classList.add('active');
                         this.classList.add('bg-purple-700');
                         this.classList.remove('bg-gray-800');
-                        
+
                         filterGames();
-                    } 
+                    }
                     // If it's a type filter
                     else {
                         document.querySelectorAll('.type-filter').forEach(btn => {
@@ -706,11 +810,11 @@
                             btn.classList.remove('bg-indigo-800');
                             btn.classList.add('bg-gray-800');
                         });
-                        
+
                         this.classList.add('active');
                         this.classList.add('bg-indigo-800');
                         this.classList.remove('bg-gray-800');
-                        
+
                         filterGames();
                     }
                 });
@@ -721,21 +825,21 @@
         function filterGames() {
             const activeCategory = document.querySelector('.category-button:not(.type-filter).active')?.dataset.category || 'all';
             const activeType = document.querySelector('.type-filter.active')?.dataset.type || 'all';
-            
+
             document.querySelectorAll('.game-card').forEach(card => {
                 const cardCategory = card.dataset.category;
                 const cardType = card.dataset.type;
-                
+
                 const categoryMatch = activeCategory === 'all' || cardCategory === activeCategory;
                 const typeMatch = activeType === 'all' || cardType === activeType;
-                
+
                 if (categoryMatch && typeMatch) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
                 }
             });
-            
+
             // Update count
             updateFilteredCount();
         }
@@ -745,7 +849,7 @@
             const totalCount = gamesData.length;
             const count2D = gamesData.filter(game => game.type === '2d').length;
             const count3D = gamesData.filter(game => game.type === '3d').length;
-            
+
             // Update total count
             const filteredCountElement = document.getElementById('filtered-count');
             if (filteredCountElement) {
@@ -756,13 +860,13 @@
                     filteredCountElement.textContent = visibleCards;
                 }
             }
-            
+
             // Update type counts
             const count2DElement = document.getElementById('2d-count');
             if (count2DElement) {
                 count2DElement.textContent = count2D;
             }
-            
+
             const count3DElement = document.getElementById('3d-count');
             if (count3DElement) {
                 count3DElement.textContent = count3D;
@@ -770,4 +874,5 @@
         }
     </script>
 </body>
-</html> 
+
+</html>

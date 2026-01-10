@@ -1,0 +1,324 @@
+/* NeXuS Common Styles */
+/* Shared styles for the NeXuS HTML5 Games Portal */
+
+:root {
+    --primary: #6200EA;
+    --primary-dark: #3700B3;
+    --primary-light: #BB86FC;
+    --secondary: #03DAC6;
+    --secondary-dark: #018786;
+    --background: #0F1225;
+    --surface: #1E1E2E;
+    --accent: #FF3D71;
+    --error: #CF6679;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B3B3BC;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    background-image: 
+        radial-gradient(circle at 25px 25px, rgba(98, 0, 234, 0.07) 2%, transparent 0%),
+        radial-gradient(circle at 75px 75px, rgba(3, 218, 198, 0.05) 2%, transparent 0%);
+    background-size: 100px 100px;
+    overflow-x: hidden;
+}
+
+/* Typography */
+.title-font {
+    font-family: 'Audiowide', cursive;
+}
+
+.heading-font {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.body-font {
+    font-family: 'Exo', sans-serif;
+}
+
+/* Glow Effects */
+.glow-text {
+    text-shadow: 0 0 15px rgba(98, 0, 234, 0.5), 0 0 30px rgba(3, 218, 198, 0.3);
+}
+
+.glow-border {
+    box-shadow: 0 0 15px rgba(3, 218, 198, 0.3);
+}
+
+/* Neo-brutalism style */
+.neo-brutalism {
+    box-shadow: 4px 4px 0 var(--secondary);
+}
+
+/* Tech Border */
+.tech-border {
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--secondary), transparent);
+}
+
+/* Cyber Button */
+.cyber-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.cyber-btn::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, transparent, var(--secondary), transparent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: bottom right;
+}
+
+.cyber-btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Game Card */
+.game-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: rgba(30, 30, 46, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(98, 0, 234, 0.15), 0 5px 15px rgba(3, 218, 198, 0.1);
+    border: 1px solid rgba(98, 0, 234, 0.3);
+}
+
+/* Category Button */
+.category-button {
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.category-button:hover {
+    transform: translateY(-2px);
+    border: 2px solid var(--secondary);
+}
+
+.category-btn.active {
+    background-color: rgba(98, 0, 234, 0.3);
+    border-color: var(--primary);
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.3);
+}
+
+/* Game Type Badge */
+.game-type-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.type-2d {
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+}
+
+.type-3d {
+    color: #a855f7;
+    border: 1px solid #a855f7;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(98, 0, 234, 0.8) 0%, rgba(3, 218, 198, 0.8) 100%);
+}
+
+/* Similar Game Card */
+.similar-game-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: rgba(30, 30, 46, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.similar-game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(98, 0, 234, 0.15), 0 5px 15px rgba(3, 218, 198, 0.1);
+    border: 1px solid rgba(98, 0, 234, 0.3);
+}
+
+/* Game Detail Card */
+.game-detail-card {
+    background: rgba(30, 30, 46, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Control Item */
+.control-item {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+}
+
+.control-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(99, 102, 241, 0.5);
+    border-radius: 4px;
+}
+
+.control-item:after {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6366f1;
+    font-size: 12px;
+}
+
+/* Game Feature */
+.game-feature {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+}
+
+.game-feature:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(99, 102, 241, 0.5);
+    border-radius: 4px;
+}
+
+.game-feature:after {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6366f1;
+    font-size: 12px;
+}
+
+/* Constellation Background */
+.constellation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: twinkle 4s infinite alternate;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.line {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(98, 0, 234, 0), rgba(3, 218, 198, 0.5), rgba(98, 0, 234, 0));
+    animation: pulse 5s infinite alternate;
+    transform-origin: left center;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.1; }
+    100% { opacity: 0.5; }
+}
+
+/* Pulse Background Animation */
+.pulse-bg {
+    animation: pulseBg 5s infinite alternate;
+}
+
+@keyframes pulseBg {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Iframe Container */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive iframe styles */
+@media (max-width: 768px) {
+    .iframe-container {
+        padding-bottom: 75%; /* Slightly higher ratio on mobile devices */
+    }
+}
+
+.responsive-iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+@media (max-width: 640px) {
+    .responsive-iframe-container {
+        padding-bottom: 75%; /* Higher ratio on mobile devices */
+    }
+}
