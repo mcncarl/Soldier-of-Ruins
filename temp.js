@@ -1,1 +1,0 @@
-const fs = require(" fs\); const content = fs.readFileSync(\./games-data.js\, \utf8\); const chineseRegex = /[\u4e00-\u9fa5]/; const hasChineseText = chineseRegex.test(content); console.log(\File still contains Chinese: \ + hasChineseText);

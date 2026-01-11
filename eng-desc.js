@@ -1,1 +1,0 @@
-module.exports = { standard: This game provides an engaging experience with simple controls and challenging gameplay., intro: This classic 2D game showcases the capabilities of modern browsers, allowing you to play directly in your browser without any plugins., outro: The game automatically adjusts to your device performance to provide the optimal gaming experience. };
