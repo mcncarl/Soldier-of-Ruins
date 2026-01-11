@@ -5,50 +5,55 @@ const gamesData = [
   {
     "id": "soldier-of-ruins",
     "title": "Soldier of Ruins",
-    "category": "adventure",
+    "category": "action",
     "type": "3d",
     "iframe": "https://html-classic.itch.zone/html/13108166/index.html",
-    "thumbnail": "https://placehold.co/600x400/6366f1/ffffff?text=Soldier+of+Ruins",
-    "description": "In this exciting adventure game, you play as a brave warrior exploring the mysteries and dangers of ancient ruins. Face various enemies and obstacles, challenging your skills and reaction abilities.",
-    "tagline": "Explore ruins, conquer challenges",
+    "thumbnail": "https://img.itch.zone/aW1nLzE3NjI2NzI4LnBuZw==/original/9%2BsYrJ.png",
+    "description": "A gripping first-person horror shooter set in the mysterious Temple of Apocalypse. As a skilled operative, navigate eerie ruins, solve puzzles, and survive against supernatural threats in this atmospheric adventure.",
+    "tagline": "Survive the Temple of Apocalypse",
     "controls": [
-      "Arrow keys/WASD - Move",
+      "WASD - Move",
+      "Mouse - Look / Aim",
+      "Left Click - Shoot",
+      "Right Click - Aim Down Sights",
+      "R - Reload",
+      "Shift - Run",
       "Space - Jump",
-      "Z/J - Attack",
-      "X/K - Special skill"
+      "C - Crouch",
+      "F - Interact / Pick up"
     ],
-    "categoryColor": "indigo",
-    "longDescription": "This beautiful 2D adventure game showcases the capabilities of modern browsers, playable directly in your browser without any plugins. In this exciting adventure, you play as a brave warrior exploring the mysteries and dangers of ancient ruins. Face various enemies and obstacles, challenging your skills and reaction abilities. The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Use arrow keys/WASD to move, space to jump, Z/J to attack, and X/K for special skills in this 2D environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "categoryColor": "red",
+    "longDescription": "Soldier of Ruins: Temple of Apocalypse is an intense first-person horror shooter that plunges you into a nightmare. You play as a special operative sent to investigate a mysterious temple shrouded in dark legends. What starts as a reconnaissance mission quickly turns into a fight for survival as you discover the temple's dark secret: a supernatural power that transforms sinners into monsters. Explore the detailed 3D ruins, manage your ammunition, and uncover the truth behind General McKenzie's expedition.",
+    "gameplayDescription": "The game combines atmospheric exploration with fast-paced FPS combat. You'll need to navigate through dark corridors, find keys to unlock new areas, and battle terrifying enemies including mutated soldiers and supernatural creatures. The game features smooth controls, realistic sound effects, and a compelling storyline that unfolds as you progress deeper into the ruins.",
     "rating": "4.8",
     "features": [
-      "Beautiful pixel art 2D visuals",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Smooth gameplay mechanics",
-      "Cross-browser compatibility"
+      "Immersive 3D horror atmosphere",
+      "Fast-paced First-Person Shooter combat",
+      "Diverse arsenal of weapons including shotguns",
+      "Intricate level design with puzzles",
+      "Terrifying enemy AI"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore each area to discover hidden treasures and items.",
-      "Learn each enemy's attack patterns to fight more effectively.",
-      "Make good use of special skills to overcome difficult battles and obstacles.",
-      "Pay attention to collecting health items to restore health at critical moments."
+      "Conserve your ammo; enemies can be tough to take down.",
+      "Listen carefully - sound cues can reveal enemy locations.",
+      "Explore every corner for health packs and ammo.",
+      "Use the environment to your advantage during firefights.",
+      "Don't rush; check corners before entering new rooms."
     ],
-    "developer": "Temple of Apocalypse",
-    "releaseDate": "2025-03-22",
-    "genre": "Adventure, Action, Platformer",
-    "platforms": "Browser",
-    "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "developer": "Studiohammergames",
+    "releaseDate": "2024-01-15",
+    "genre": "Horror, FPS, Action",
+    "platforms": "Browser (HTML5)",
+    "ageRating": "Teen",
+    "languages": "English",
     "similarGames": [
       {
-        "id": "platformer-adventure",
-        "title": "Platform Adventure",
-        "category": "adventure",
-        "type": "2d",
-        "thumbnail": "https://placehold.co/600x400/0891b2/ffffff?text=Platform+Adventure",
-        "rating": "4.4"
+        "id": "dark-descent",
+        "title": "Dark Descent",
+        "category": "action",
+        "type": "3d",
+        "thumbnail": "https://placehold.co/600x400/1f2937/ffffff?text=Dark+Descent",
+        "rating": "4.6"
       }
     ]
   },
@@ -58,55 +63,55 @@ const gamesData = [
     "category": "puzzle",
     "type": "2d",
     "iframe": "https://html-classic.itch.zone/html/9287654/index.html",
-    "thumbnail": "https://placehold.co/600x400/ec4899/ffffff?text=Magic+Yarn",
-    "description": "In this enchanting puzzle game, use magical yarn to weave colorful patterns and solve intricate puzzles. Connect points, create shapes, and unravel the mysteries of an ancient textile art.",
-    "tagline": "Weave magical patterns",
+    "thumbnail": "https://img.itch.zone/aW1nLzEzMjA4NTMxLnBuZw==/original/Gqo%2FEe.png",
+    "description": "A relaxing puzzle game where you weave colorful yarn patterns. Connect dots, create beautiful designs, and solve increasingly complex challenges in this meditative experience.",
+    "tagline": "Weave your way to zen",
     "controls": [
       "Mouse - Draw yarn paths",
-      "Left click - Select and connect points",
-      "Right click - Remove yarn",
-      "Scroll wheel - Zoom in/out",
-      "Space - Reset current level"
+      "Left Click - Connect dots",
+      "Right Click - Undo connection",
+      "Space - Reset level",
+      "ESC - Pause"
     ],
-    "categoryColor": "blue",
-    "longDescription": "Magic Yarn is a visually stunning puzzle game that draws inspiration from traditional weaving arts around the world. Players use magical yarn to create intricate patterns, solve puzzles, and progress through increasingly complex challenges. The game features a relaxing atmosphere with beautiful visuals and soothing music that creates an immersive experience.",
-    "gameplayDescription": "Use your mouse to draw yarn paths between connection points. Left click to select and connect points, right click to remove yarn connections. Each level presents new patterns to complete and puzzles to solve, with the difficulty gradually increasing as you progress. The intuitive controls make it accessible for players of all skill levels.",
+    "categoryColor": "pink",
+    "longDescription": "Magic Yarn is a beautifully crafted puzzle game that combines the ancient art of weaving with modern puzzle mechanics. Players draw colorful yarn paths between connection points to create intricate patterns. Each level presents a unique challenge, requiring both creativity and logical thinking. The game's soothing aesthetic and calming soundtrack make it perfect for relaxation while still engaging your mind.",
+    "gameplayDescription": "Use your mouse to draw yarn paths between glowing connection points. Each level has specific patterns to complete. As you progress, puzzles become more complex with multiple yarn colors, crossing paths, and special connection rules. The intuitive drag-and-drop interface makes it easy to experiment with different solutions.",
     "rating": "4.3",
     "features": [
-      "Beautiful handcrafted visual design",
-      "Intuitive and responsive controls",
-      "100+ unique puzzles and patterns",
-      "Relaxing soundtrack and ambient sounds",
-      "Progressive difficulty curve"
+      "100+ handcrafted puzzle levels",
+      "Relaxing ambient soundtrack",
+      "Beautiful minimalist art style",
+      "Multiple yarn colors and patterns",
+      "No time limits - play at your own pace"
     ],
     "tips": [
-      "Plan your patterns before starting to connect points",
-      "Some puzzles have multiple solutions - find the most efficient one",
-      "Pay attention to color patterns for hints",
-      "If stuck, try approaching the puzzle from a different perspective",
-      "Use the reset button when you need a fresh start"
+      "Start from the edges and work your way inward.",
+      "Look for symmetrical patterns - they're often the key.",
+      "Don't be afraid to reset and try a different approach.",
+      "Pay attention to color hints - they guide the solution.",
+      "Some levels have multiple valid solutions - be creative!"
     ],
-    "developer": "Yarn Studio Games",
-    "releaseDate": "2025-02-14",
-    "genre": "Puzzle, Creative, Relaxing",
-    "platforms": "Browser",
+    "developer": "Indie Puzzle Studios",
+    "releaseDate": "2023-06-15",
+    "genre": "Puzzle, Relaxing, Creative",
+    "platforms": "Browser (HTML5)",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "languages": "English",
     "similarGames": [
       {
-        "id": "magical-adventure",
-        "title": "Magical Adventure",
-        "category": "adventure",
+        "id": "hextris-3d",
+        "title": "Hextris",
+        "category": "puzzle",
         "type": "3d",
-        "thumbnail": "https://placehold.co/600x400/a855f7/ffffff?text=Magical+Adventure",
-        "rating": "4.5"
+        "thumbnail": "https://raw.githubusercontent.com/Hextris/hextris/gh-pages/images/logo.png",
+        "rating": "4.7"
       },
       {
         "id": "breaklock",
         "title": "Pattern Unlock",
         "category": "puzzle",
         "type": "2d",
-        "thumbnail": "https://placehold.co/600x400/22c55e/ffffff?text=BreakLock",
+        "thumbnail": "https://maxwellito.github.io/breaklock/img/icon-512.png",
         "rating": "3.7"
       }
     ]
@@ -114,49 +119,51 @@ const gamesData = [
   {
     "id": "webgl-fluid",
     "title": "WebGL Fluid Simulation",
-    "category": "puzzle",
+    "category": "simulation",
     "type": "3d",
     "iframe": "https://paveldogreat.github.io/WebGL-Fluid-Simulation/",
-    "thumbnail": "https://placehold.co/600x400/3b82f6/ffffff?text=WebGL+Fluid",
-    "description": "Experience this mesmerizing interactive fluid simulation powered by WebGL. Create colorful fluid dynamics with just your mouse movements and explore the beautiful patterns that emerge.",
-    "tagline": "Create beautiful fluid patterns",
+    "thumbnail": "https://raw.githubusercontent.com/PavelDoGreat/WebGL-Fluid-Simulation/master/screenshot.jpg",
+    "description": "A mesmerizing, high-performance fluid dynamics simulation running in your browser. Create swirling, colorful patterns with your mouse or touch in this relaxing, interactive visual experience.",
+    "tagline": "Interactive art in motion",
     "controls": [
-      "Mouse move - Create fluid movement",
-      "Click and drag - Stronger fluid dynamics",
-      "Settings panel - Adjust simulation parameters"
+      "Mouse / Touch - Interact with fluid",
+      "Click & Drag - Create strong flows",
+      "P - Pause simulation",
+      "Space - Random splat",
+      "S - Capture screenshot"
     ],
     "categoryColor": "blue",
-    "longDescription": "This beautiful 3D simulation showcases the capabilities of modern browsers, playable directly in your browser without any plugins. Experience this mesmerizing interactive fluid simulation powered by WebGL. Create colorful fluid dynamics with just your mouse movements and explore the beautiful patterns that emerge. The simulation automatically adjusts based on your device's performance to provide the best experience.",
-    "gameplayDescription": "Use your mouse to interact with the fluid simulation in this 3D environment. The intuitive interface allows users of all skill levels to quickly create beautiful patterns. As you explore the settings, new visual effects and behaviors will emerge, keeping the experience fresh and engaging.",
-    "rating": "4.1",
+    "longDescription": "WebGL Fluid Simulation is a stunning showcase of modern web graphics technology, created by Pavel Dobryakov. It implements a real-time Navier-Stokes fluid solver on the GPU, allowing for incredibly smooth and realistic fluid physics. Users can manipulate density, velocity, pressure, and color to create beautiful, ever-changing abstract art. It's not just a tech demo; it's a relaxing digital toy that's perfect for stress relief or visual meditation.",
+    "gameplayDescription": "This is an open-ended sandbox experience. Use your mouse or finger to stir the virtual fluid, creating ripples, vortices, and streams of color. The settings menu (usually accessible via a corner icon) allows you to tweak advanced parameters like vorticity, dissipation, bloom intensity, and sunrays, giving you complete control over the visual style.",
+    "rating": "4.9",
     "features": [
-      "Beautiful WebGL-powered visual effects",
-      "Responsive controls optimized for mouse interaction",
-      "Adjustable simulation parameters",
-      "Smooth rendering",
-      "Cross-browser compatibility"
+      "Real-time Navier-Stokes fluid physics",
+      "GPU-accelerated for high performance",
+      "Beautiful bloom and sunray effects",
+      "Highly customizable simulation parameters",
+      "Screenshot capture with transparent background support"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before creating complex patterns.",
-      "Thoroughly explore the settings to discover hidden effects and capabilities.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each session will improve your skills."
+      "Open the settings menu to experiment with 'Bloom' and 'Sunrays' for glowing effects.",
+      "Try lowering 'Dissipation' to make the fluid trails last longer.",
+      "Use 'Random Splat' (Spacebar) to instantly create a burst of color.",
+      "Great for creating unique wallpapers or abstract art.",
+      "Works smoothly on mobile devices too!"
     ],
-    "developer": "HTML5 Game Studio",
-    "releaseDate": "2025-03-22",
-    "genre": "2D Games, HTML5",
-    "platforms": "Browser",
+    "developer": "Pavel Dobryakov",
+    "releaseDate": "2017-09-01",
+    "genre": "Simulation, Art, Relaxing",
+    "platforms": "Browser, iOS, Android",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "languages": "English",
     "similarGames": [
       {
-        "id": "webgl-fluid",
-        "title": "WebGL Fluid Simulation",
-        "category": "puzzle",
-        "type": "3d",
-        "thumbnail": "https://placehold.co/600x400/3b82f6/ffffff?text=WebGL+Fluid",
-        "rating": "4.1"
+        "id": "particle-clicker",
+        "title": "Particle Clicker",
+        "category": "simulation",
+        "type": "2d",
+        "thumbnail": "https://placehold.co/600x400/a855f7/ffffff?text=Particle+Clicker",
+        "rating": "4.2"
       }
     ]
   },
@@ -166,45 +173,46 @@ const gamesData = [
     "category": "arcade",
     "type": "2d",
     "iframe": "https://elgoog.im/pacman/",
-    "thumbnail": "https://placehold.co/600x400/f59e0b/ffffff?text=Pacman",
-    "description": "This is a web version of the classic arcade game Pacman. Control the yellow character to collect all the dots in the maze while avoiding four colorful ghosts. Collect special power pellets to temporarily counter-attack the ghosts.",
-    "tagline": "Classic arcade, timeless fun",
+    "thumbnail": "https://www.google.com/logos/2010/pacman10-i.png",
+    "description": "Play the legendary arcade classic! Guide Pac-Man through the maze, eat all the dots, and avoid the colorful ghosts. Simple, addictive, and timeless fun for everyone.",
+    "tagline": "Waka Waka Waka!",
     "controls": [
-      "Arrow keys/WASD - Move",
-      "P - Pause game"
+      "Arrow Keys / WASD - Move Pac-Man",
+      "Touch / Swipe - Move (Mobile)",
+      "P - Pause Game"
     ],
-    "categoryColor": "purple",
-    "longDescription": "This classic 2D game showcases the capabilities of modern browsers, playable directly in your browser without any plugins. This is a web version of the classic arcade game Pacman. Control the yellow character to collect all the dots in the maze while avoiding four colorful ghosts. Collect special power pellets to temporarily counter-attack the ghosts. The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Use arrow keys or WASD to move your character in this 2D maze environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
-    "rating": "3.7",
+    "categoryColor": "yellow",
+    "longDescription": "Originally released by Namco in 1980, Pac-Man is one of the most iconic video games of all time. This faithful browser adaptation recreates the thrill of the arcade original. Navigate the maze, gobble up pellets, and outsmart the four ghosts: Blinky (Red), Pinky (Pink), Inky (Cyan), and Clyde (Orange). Grab the large Power Pellets to turn the tables and eat the ghosts for bonus points!",
+    "gameplayDescription": "The objective is simple: clear the maze by eating all 240 Pac-Dots. However, the ghosts pursue you with unique behaviors. Blinky chases you directly, Pinky tries to ambush you, Inky is unpredictable, and Clyde wanders. Eating a Power Pellet turns ghosts blue/vulnerable for a short time. Clear the maze to advance to different levels with increasing speed.",
+    "rating": "4.9",
     "features": [
-      "Beautiful pixel art 2D visuals",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Smooth gameplay mechanics",
-      "Cross-browser compatibility"
+      "Authentic Arcade Gameplay and Sounds",
+      "Original Ghost AI personalities",
+      "Classic Fruit Bonuses (Cherry, Strawberry, etc.)",
+      "High Score tracking",
+      "Responsive controls for desktop and mobile"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Learn the ghosts' behaviors: Blinky chases directly, others are trickier.",
+      "Save Power Pellets for when you are cornered.",
+      "You move slower while eating dots; clear paths are faster for escaping.",
+      "Use the side tunnels (Teleporters) to lose pursuing ghosts.",
+      "Eating ghosts in succession (200, 400, 800, 1600) gives huge points."
     ],
-    "developer": "HTML5 Game Studio",
-    "releaseDate": "2025-03-22",
-    "genre": "2D Games, HTML5",
-    "platforms": "Browser",
+    "developer": "Namco",
+    "releaseDate": "1980-05-22",
+    "genre": "Arcade, Maze, Classic",
+    "platforms": "Browser, All",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "languages": "English",
     "similarGames": [
       {
-        "id": "word-guess",
-        "title": "Word Guessing Game",
-        "category": "word",
+        "id": "snake-battle",
+        "title": "Snake Battle",
+        "category": "arcade",
         "type": "2d",
-        "thumbnail": "https://placehold.co/600x400/0ea5e9/ffffff?text=Word+Guess",
-        "rating": "3.6"
+        "thumbnail": "https://slitherioplay.org/img/slither-io-game.jpg",
+        "rating": "4.5"
       }
     ]
   },
@@ -214,39 +222,49 @@ const gamesData = [
     "category": "puzzle",
     "type": "3d",
     "iframe": "https://hextris.github.io/hextris/",
-    "thumbnail": "https://placehold.co/600x400/4f46e5/ffffff?text=Hextris",
-    "description": "A fascinating puzzle game based on hexagons, inspired by Russian blocks.Rotate the hexagon to match blocks of the same color, create combos and get high scores. Easy to pick up, but full of challenge.",
-    "tagline": "The art of hexagonal puzzles",
+    "thumbnail": "https://raw.githubusercontent.com/Hextris/hextris/gh-pages/images/logo.png",
+    "description": "A fast-paced, addictive puzzle game inspired by Tetris. Rotate the hexagon to catch falling colored bars and prevent them from stacking up. A test of reflexes and strategy!",
+    "tagline": "Hexagonal Tetris Challenge",
     "controls": [
-      "Left/Right Arrow keys - Rotate the hexagon",
-      "Up/Down Arrow keys - Speed up falling",
-      "P - Pause game"
+      "Left / Right Arrow - Rotate Hexagon",
+      "A / D - Rotate Hexagon",
+      "Touch Left/Right - Rotate (Mobile)",
+      "Down Arrow - Drop Block Fast"
     ],
-    "categoryColor": "blue",
-    "longDescription": "This immersive 3D WebGL experienceshowcases the capabilities of modern browsers, playable directly in your browser without any plugins. A fascinating puzzle game based on hexagons, inspired by Russian blocks.Rotate the hexagon to match blocks of the same color, create combos and get high scores. Easy to pick up, but full of challenge. The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Use Left/Right Arrow keys to rotate the hexagon, Up/Down Arrow keys to speed up falling, P to pause the game in this 3D environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
-    "rating": "4.5",
+    "categoryColor": "indigo",
+    "longDescription": "Hextris is a fast-paced puzzle game that combines elements of Tetris with a hexagonal grid. Colored blocks fall from the edges towards the center hexagon. Your goal is to rotate the hexagon to catch these blocks. When 3 or more blocks of the same color touch, they disappear, earning you scores. Don't let the blocks stack up past the outer grey hexagon, or it's Game Over!",
+    "gameplayDescription": "The gameplay gets progressively faster as you score more points. You need quick reflexes to rotate the central shape to the correct color face. Matches can be made horizontally or vertically depending on how the blocks settle. Combo matches clear more space and give bonus points. The music and visuals pump up the adrenaline as the speed increases.",
+    "rating": "4.7",
     "features": [
-      "Immersive 3D graphics with dynamic lighting",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Real-time physics interactions",
-      "Cross-browser compatibility"
+      "Addictive high-score based gameplay",
+      "Simple one-button (or two-button) controls",
+      "Colorful, clean graphics and smooth animations",
+      "Progressively increasing difficulty",
+      "Works perfectly on mobile devices"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Keep the stack 'flat' - avoid letting one color pile up too high.",
+      "Look for combos - clearing a set of blocks might make upper blocks fall into a match.",
+      "Use the Down arrow to drop blocks faster only when you are 100% sure.",
+      "Stay calm when the speed increases; panic leads to mistakes.",
+      "Focus on the outer edge to see what colors are coming next."
     ],
-    "developer": "WebGL Studios",
-    "releaseDate": "2025-03-22",
-    "genre": "3D Interactive, WebGL",
-    "platforms": "Browser",
+    "developer": "Logan Engstrom & Garrett Finucane",
+    "releaseDate": "2014-08-01",
+    "genre": "Puzzle, Arcade, Strategy",
+    "platforms": "Browser, Mobile",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
-    "similarGames": []
+    "languages": "English",
+    "similarGames": [
+      {
+        "id": "2048-game",
+        "title": "2048 Number Blocks",
+        "category": "puzzle",
+        "type": "2d",
+        "thumbnail": "https://placehold.co/600x400/f59e0b/ffffff?text=2048",
+        "rating": "4.8"
+      }
+    ]
   },
   {
     "id": "minesweeper",
@@ -254,46 +272,47 @@ const gamesData = [
     "category": "puzzle",
     "type": "2d",
     "iframe": "https://minesweeper.online/",
-    "thumbnail": "https://placehold.co/600x400/22c55e/ffffff?text=Minesweeper",
-    "description": "Classic minesweeper game reimagined for modern web browsers. Clear mines from a grid using clues about the number of nearby mines in each field.",
-    "tagline": "Strategic mine clearing",
+    "thumbnail": "https://minesweeper.online/img/homepage/beginner.png",
+    "description": "The timeless logic puzzle! Click cells to reveal numbers indicating nearby mines. Use deduction to flag all mines and clear the board without triggering any explosions.",
+    "tagline": "Classic logic meets modern design",
     "controls": [
-      "Left click - Reveal cell",
-      "Right click - Flag a mine",
-      "Double click - Quick reveal surrounding cells"
+      "Left Click - Reveal cell",
+      "Right Click - Flag/Unflag mine",
+      "Both Clicks - Chord (reveal adjacent cells)",
+      "F2 - New game"
     ],
-    "categoryColor": "blue",
-    "longDescription": "This classic 2D puzzle game showcases the capabilities of modern browsers, playable directly in your browser without any plugins. Classic minesweeper game reimagined for modern web browsers. Clear mines from a grid using clues about the number of nearby mines in each field. The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Use your mouse to reveal cells and flag mines in this 2D environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "categoryColor": "green",
+    "longDescription": "Minesweeper is one of the most iconic puzzle games ever created, originally included with Windows. This modern browser version preserves the classic gameplay while adding smooth animations and multiple difficulty levels. The objective is simple: reveal all safe cells without clicking on any mines. Numbers indicate how many mines are adjacent to that cell, and you must use logical deduction to determine mine locations.",
+    "gameplayDescription": "Each number tells you how many of the 8 surrounding cells contain mines. Use this information to deduce safe cells and mine locations. Right-click to place flags on suspected mines. Advanced players use 'chording' - clicking both mouse buttons on a number to automatically reveal all adjacent unflagged cells if the correct number of flags are placed. Master pattern recognition like the '1-2-1' formation to solve boards faster.",
     "rating": "4.4",
     "features": [
-      "Clean, modern visual design",
-      "Responsive controls optimized for mouse",
-      "Multiple difficulty levels",
-      "Game save functionality",
-      "Cross-browser compatibility"
+      "Multiple difficulty levels (Beginner, Intermediate, Expert)",
+      "Clean, intuitive interface",
+      "Timer and move counter",
+      "Guaranteed solvable boards (no guessing required)",
+      "Leaderboards and statistics tracking"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before tackling more difficult levels.",
-      "Look for patterns when solving the puzzle.",
-      "Always start with corners and edges for best results.",
-      "If you're unsure, use flags to mark potential mines.",
-      "Practice makes perfect - each game will improve your skills."
+      "Always start by clicking corners and edges - they have fewer adjacent cells.",
+      "Look for the '1-2-1' pattern - mines are always beside the 2.",
+      "When a number equals the unflagged adjacent cells, they're all mines.",
+      "Use chording to save time once you've flagged correctly.",
+      "Don't guess unless absolutely necessary - use logic!"
     ],
-    "developer": "HTML5 Game Studio",
-    "releaseDate": "2025-03-22",
-    "genre": "2D Games, HTML5",
-    "platforms": "Browser",
+    "developer": "Minesweeper Online",
+    "releaseDate": "1990-01-01",
+    "genre": "Puzzle, Logic, Classic",
+    "platforms": "Browser, All",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "languages": "English",
     "similarGames": [
       {
-        "id": "minesweeper",
-        "title": "Minesweeper",
+        "id": "2048-game",
+        "title": "2048",
         "category": "puzzle",
         "type": "2d",
-        "thumbnail": "https://placehold.co/600x400/10b981/ffffff?text=Minesweeper",
-        "rating": "4.4"
+        "thumbnail": "https://play2048.co/meta/apple-touch-icon.png",
+        "rating": "4.8"
       }
     ]
   },
@@ -303,94 +322,97 @@ const gamesData = [
     "category": "racing",
     "type": "3d",
     "iframe": "https://hexgl.bkcore.com/play/",
-    "thumbnail": "https://placehold.co/600x400/8b5cf6/ffffff?text=HexGL+3D",
-    "description": "An amazing HTML5/WebGL 3D Racing Game on futuristic high-speed tracks. Built entirely with open source technology, showcasing advanced 3D rendering capabilities in browsers.",
-    "tagline": "Future Racing, Ultimate Speed Experience",
+    "thumbnail": "https://hexgl.bkcore.com/image/model.jpg",
+    "description": "A stunning futuristic anti-gravity racing game built with HTML5 and WebGL. Race at breakneck speeds through neon-lit tracks in this browser-based tribute to Wipeout.",
+    "tagline": "Anti-gravity racing at light speed",
     "controls": [
-      "Arrow keys/WASD - Drive",
-      "Space - Accelerate",
-      "H key - Toggle help"
+      "Arrow Keys / WASD - Steer",
+      "Space - Brake",
+      "Shift - Boost (when available)",
+      "R - Reset position"
     ],
-    "categoryColor": "yellow",
-    "longDescription": "This immersive 3D WebGL experienceshowcases the capabilities of modern browsers, playable directly in your browser without any plugins. An amazing HTML5/WebGL 3D Racing Game on futuristic high-speed tracks. Built entirely with open source technology, showcasing advanced 3D rendering capabilities in browsers.The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Use Arrow keys/WASD to drive, Space to accelerate, H key to toggle help in this 3D game environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "categoryColor": "purple",
+    "longDescription": "HexGL is a breathtaking futuristic racing game created by Thibaut Despoulain (BKcore) in 2012. Built entirely with HTML5, JavaScript, and WebGL, it showcases the incredible capabilities of modern web browsers. Inspired by classic anti-gravity racers like Wipeout, HexGL features stunning 3D graphics, smooth 60 FPS gameplay, and an electronic soundtrack that perfectly captures the high-speed atmosphere. The game won FWA Site of the Day and was featured on Chrome Experiments.",
+    "gameplayDescription": "Pilot your anti-gravity ship through challenging futuristic tracks at incredible speeds. Master tight turns, avoid obstacles, and use boost pads strategically to achieve the fastest lap times. The physics engine provides realistic handling that rewards skillful racing lines. Each track features multiple routes and shortcuts to discover. The game runs entirely in your browser with no plugins required, demonstrating the power of WebGL technology.",
     "rating": "3.7",
     "features": [
-      "Immersive 3D graphics with dynamic lighting",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Real-time physics interactions",
-      "Cross-browser compatibility"
+      "Stunning WebGL 3D graphics",
+      "Smooth 60 FPS gameplay",
+      "Multiple challenging tracks",
+      "Electronic soundtrack",
+      "Time trial mode with leaderboards"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Use air brakes (left/right arrows) to drift around tight corners.",
+      "Hit boost pads at the right angle to maximize speed gain.",
+      "Learn the racing line - hugging the inside of turns is key.",
+      "Don't overuse boost - save it for straightaways.",
+      "Practice makes perfect - memorize track layouts for better times."
     ],
-    "developer": "WebGL Studios",
-    "releaseDate": "2025-03-22",
-    "genre": "3D Interactive, WebGL",
-    "platforms": "Browser",
+    "developer": "BKcore (Thibaut Despoulain)",
+    "releaseDate": "2012-08-01",
+    "genre": "Racing, Sci-Fi, 3D",
+    "platforms": "Browser (WebGL)",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "languages": "English",
     "similarGames": [
       {
         "id": "webgl-fluid",
         "title": "WebGL Fluid Simulation",
-        "category": "puzzle",
+        "category": "simulation",
         "type": "3d",
-        "thumbnail": "https://placehold.co/600x400/3b82f6/ffffff?text=WebGL+Fluid",
-        "rating": "4.1"
+        "thumbnail": "https://raw.githubusercontent.com/PavelDoGreat/WebGL-Fluid-Simulation/master/screenshot.jpg",
+        "rating": "4.9"
       }
     ]
   },
   {
     "id": "breaklock",
-    "title": "Pattern Unlock",
+    "title": "Breaklock",
     "category": "puzzle",
     "type": "2d",
     "iframe": "https://maxwellito.github.io/breaklock/",
-    "thumbnail": "https://placehold.co/600x400/22c55e/ffffff?text=BreakLock",
-    "description": "A puzzle game based on Android's Pattern Unlock, requiring guessing the correct connection mode. Includes different difficulty levels, both fun and brain training.",
-    "tagline": "Unlock patterns, Challenge your brain",
+    "thumbnail": "https://maxwellito.github.io/breaklock/img/icon-512.png",
+    "description": "A clever pattern-unlock puzzle game inspired by Mastermind and Android lock screens. Deduce the hidden pattern using logic and feedback from each attempt.",
+    "tagline": "Crack the code, unlock the pattern",
     "controls": [
-      "Mouse drag - Connect dots",
-      "Click - Select options"
+      "Mouse - Draw pattern by connecting dots",
+      "Touch - Swipe to connect (mobile)",
+      "Enter - Submit pattern",
+      "ESC - Clear pattern"
     ],
-    "categoryColor": "blue",
-    "longDescription": "This classic 2D game showcases the capabilities of modern browsers, playable directly in your browser without any plugins. A puzzle game based on Android's Pattern Unlock, requiring guessing the correct connection mode. Includes different difficulty levels, both fun and brain training. The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Mouse drag - Connect dots, Click - Select optionsin this 2D game environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "categoryColor": "teal",
+    "longDescription": "Breaklock is an innovative puzzle game created by Maxwellito that combines the deductive reasoning of Mastermind with the familiar Android pattern lock interface. Your goal is to discover the hidden pattern by connecting dots in the correct sequence. After each guess, you receive feedback indicating how many dots are correct and in the right position. Use logic to narrow down possibilities and crack the code! The game features multiple difficulty levels from 4-dot patterns (easy) to 6-dot patterns (hard).",
+    "gameplayDescription": "Draw a pattern by connecting dots with your mouse or finger. Submit your guess and analyze the feedback: green indicators show correct dots in correct positions, while yellow shows correct dots in wrong positions. Use this information to logically deduce the hidden pattern. The game is a Progressive Web App (PWA), meaning you can install it and play offline. Each puzzle is randomly generated, providing endless replayability.",
     "rating": "3.7",
     "features": [
-      "Beautiful pixel art 2D visuals",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Smooth gameplay mechanics",
-      "Cross-browser compatibility"
+      "Three difficulty levels (4, 5, or 6 dots)",
+      "Mastermind-style logical deduction",
+      "Clean, minimalist interface",
+      "Progressive Web App (installable)",
+      "Unlimited randomly generated puzzles"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Start with a systematic pattern to gather maximum information.",
+      "Keep track of which dots you've tested in each position.",
+      "Use the process of elimination - rule out impossible patterns.",
+      "Pay close attention to the feedback colors after each guess.",
+      "On hard mode, write down your guesses to spot patterns."
     ],
-    "developer": "HTML5 Game Studio",
-    "releaseDate": "2025-03-22",
-    "genre": "2D Games, HTML5",
-    "platforms": "Browser",
+    "developer": "Maxwellito",
+    "releaseDate": "2018-03-15",
+    "genre": "Puzzle, Logic, Brain Teaser",
+    "platforms": "Browser, PWA",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "languages": "English",
     "similarGames": [
       {
-        "id": "webgl-fluid",
-        "title": "WebGL Fluid Simulation",
+        "id": "magic-yarn",
+        "title": "Magic Yarn",
         "category": "puzzle",
-        "type": "3d",
-        "thumbnail": "https://placehold.co/600x400/3b82f6/ffffff?text=WebGL+Fluid",
-        "rating": "4.1"
+        "type": "2d",
+        "thumbnail": "https://img.itch.zone/aW1nLzEzMjA4NTMxLnBuZw==/original/Gqo%2FEe.png",
+        "rating": "4.3"
       }
     ]
   },
@@ -400,150 +422,154 @@ const gamesData = [
     "category": "idle",
     "type": "2d",
     "iframe": "https://particle-clicker.web.cern.ch/",
-    "thumbnail": "https://placehold.co/600x400/dc2626/ffffff?text=Particle+Clicker",
-    "description": "Scientific click game made by CERN, simulating high-energy physics research. Click to accumulate data, hire researchers, upgrade equipment, and discover fundamental particles like the Higgs boson.",
-    "tagline": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
+    "thumbnail": "https://particle-clicker.web.cern.ch/img/screenshot.png",
+    "description": "An educational idle game created by CERN scientists! Click to generate particle collision data, hire researchers, upgrade equipment, and discover fundamental particles like the Higgs boson.",
+    "tagline": "Discover the universe, one click at a time",
     "controls": [
-      "Mouse click - Collect data",
-      "- Upgrade"
+      "Mouse Click - Generate data",
+      "Click Upgrades - Improve research",
+      "Hire Staff - Automate data collection",
+      "Research - Unlock new particles"
     ],
-    "categoryColor": "amber",
-    "longDescription": "This classic 2D game showcases the capabilities of modern browsers, playable directly in your browser without any plugins. Scientific click game made by CERN, simulating high-energy physics research. Click to accumulate data, hire researchers, upgrade equipment, and discover fundamental particles like the Higgs boson. The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Mouse click - Collect data, - Upgrade researchin this 2D game environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "categoryColor": "blue",
+    "longDescription": "Particle Clicker is a unique idle/incremental game developed during a 48-hour hackathon at CERN in 2014. Inspired by Cookie Clicker, it transforms particle physics research into an addictive clicking experience. Start by manually clicking the detector to simulate particle collisions and generate data. Use your data to conduct research, hire scientists, and upgrade your equipment. As you progress, you'll unlock real discoveries from particle physics history, from electrons to the Higgs boson. The game cleverly introduces players to concepts like the Large Hadron Collider, research funding, and the scientific method.",
+    "gameplayDescription": "Click the particle detector to generate collision data. Spend data on research to unlock new particles and earn reputation. Use reputation to hire postdocs, PhDs, and professors who automatically generate data. Purchase equipment upgrades like better detectors and computing power to boost your data generation rate. Balance your resources between research, human resources, and funding to progress through the history of particle physics discoveries. Information tabs explain the real science behind each breakthrough.",
     "rating": "4.9",
     "features": [
-      "Beautiful pixel art 2D visuals",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Smooth gameplay mechanics",
-      "Cross-browser compatibility"
+      "Created by actual CERN scientists",
+      "Educational content about real particle physics",
+      "Idle/incremental gameplay mechanics",
+      "Historical progression of physics discoveries",
+      "Detailed information about each particle"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Early game: focus on hiring staff to automate data generation.",
+      "Balance research with equipment upgrades for optimal progress.",
+      "Read the info tabs - they contain fascinating real physics!",
+      "Prestige (reset) when progress slows for permanent bonuses.",
+      "Grant money is crucial - invest in reputation-generating research."
     ],
-    "developer": "HTML5 Game Studio",
-    "releaseDate": "2025-03-22",
-    "genre": "2D Games, HTML5",
+    "developer": "CERN",
+    "releaseDate": "2014-09-01",
+    "genre": "Idle, Educational, Simulation",
     "platforms": "Browser",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "languages": "English",
     "similarGames": [
       {
-        "id": "rhythm-beat",
-        "title": "Rhythm Master",
-        "category": "music",
-        "type": "2d",
-        "thumbnail": "https://placehold.co/600x400/0f766e/ffffff?text=Rhythm+Game",
-        "rating": "3.8"
+        "id": "webgl-fluid",
+        "title": "WebGL Fluid Simulation",
+        "category": "simulation",
+        "type": "3d",
+        "thumbnail": "https://raw.githubusercontent.com/PavelDoGreat/WebGL-Fluid-Simulation/master/screenshot.jpg",
+        "rating": "4.9"
       }
     ]
   },
   {
     "id": "2048-game",
-    "title": "2048 Number Blocks",
+    "title": "2048",
     "category": "puzzle",
     "type": "2d",
-    "iframe": "https://2048.io/",
-    "thumbnail": "https://placehold.co/600x400/ea580c/ffffff?text=2048",
-    "description": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
-    "tagline": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
+    "iframe": "https://play2048.co/",
+    "thumbnail": "https://play2048.co/meta/apple-touch-icon.png",
+    "description": "The viral math puzzle game! Slide numbered tiles on a grid to combine them. 2+2=4, 4+4=8... Keep merging until you create the legendary 2048 tile!",
+    "tagline": "Join the numbers, reach 2048!",
     "controls": [
-      "Arrow keys - MoveBlock",
-      "R key -"
+      "Arrow Keys - Slide Tiles",
+      "WASD - Slide Tiles",
+      "Swipe - Slide (Mobile)"
     ],
-    "categoryColor": "blue",
-    "longDescription": "This classic 2D game showcases the capabilities of modern browsers, playable directly in your browser without any plugins. number mergingGame, by merging the same numbersto create larger values. The goal is to reach 2048, but can you challenge for higher numbers? Strategy . The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Arrow keys - MoveBlock, R - in this 2D game environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
-    "rating": "3.7",
+    "categoryColor": "yellow",
+    "longDescription": "2048 is a single-player sliding block puzzle game designed by Gabriele Cirulli. The game's objective is to slide numbered tiles on a grid to combine them to create a tile with the number 2048. However, one can continue to play the game after reaching the goal, creating tiles with larger numbers. It's deceptively simple but requires deep strategic thinking.",
+    "gameplayDescription": "Every turn, a new tile will randomly appear in an empty spot on the board with a value of either 2 or 4. Tiles slide as far as possible in the chosen direction until they strictly stopped by either another tile or the edge of the grid. If two tiles of the same number collide while moving, they will merge into a tile with the total value of the two tiles that collided.",
+    "rating": "4.8",
     "features": [
-      "Beautiful pixel art 2D visuals",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Smooth gameplay mechanics",
-      "Cross-browser compatibility"
+      "Simple yet deep strategic gameplay",
+      "Clean, minimalist design",
+      "High score saving",
+      "Works offline and on mobile",
+      "Brain-training logic puzzle"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Corner Strategy: Keep your highest number in one corner (e.g., bottom-right) and don't move it.",
+      "Never swipe Up (if your corner is at the bottom).",
+      "Keep the bottom row full so your high number doesn't shift.",
+      "Plan ahead: Don't just swipe randomly; think about where new tiles will spawn.",
+      "Focus on merging smaller numbers to keep the board clear."
     ],
-    "developer": "HTML5 Game Studio",
-    "releaseDate": "2025-03-22",
-    "genre": "2D Games, HTML5",
-    "platforms": "Browser",
+    "developer": "Gabriele Cirulli",
+    "releaseDate": "2014-03-09",
+    "genre": "Puzzle, Logic, Math",
+    "platforms": "Browser, Mobile",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "languages": "English",
     "similarGames": [
       {
-        "id": "minesweeper",
-        "title": "Minesweeper",
+        "id": "hextris-3d",
+        "title": "Hextris",
         "category": "puzzle",
-        "type": "2d",
-        "thumbnail": "https://placehold.co/600x400/10b981/ffffff?text=Minesweeper",
-        "rating": "4.4"
+        "type": "3d",
+        "thumbnail": "https://placehold.co/600x400/4f46e5/ffffff?text=Hextris",
+        "rating": "4.7"
       }
     ]
   },
   {
     "id": "astray-3d",
-    "title": "3D Maze Explorer",
+    "title": "Astray 3D Maze",
     "category": "adventure",
     "type": "3d",
     "iframe": "https://wwwtyro.github.io/Astray/",
-    "thumbnail": "https://placehold.co/600x400/3730a3/ffffff?text=3D+Maze",
-    "description": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
-    "tagline": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
+    "thumbnail": "https://raw.githubusercontent.com/wwwtyro/Astray/gh-pages/screenshot.png",
+    "description": "Navigate through stunning procedurally-generated 3D mazes in this WebGL-powered adventure. Roll your ball through intricate labyrinths with realistic physics and beautiful ambient lighting effects.",
+    "tagline": "Get lost in beautiful 3D mazes",
     "controls": [
-      "WASD/Arrow keys - Control Move",
-      "- Rotate",
-      "Space - Jump Level"
+      "WASD / Arrow Keys - Move ball",
+      "Mouse - Rotate camera",
+      "Space - Jump to next level",
+      "R - Restart level"
     ],
     "categoryColor": "indigo",
-    "longDescription": "This immersive 3D WebGL experienceshowcases the capabilities of modern browsers, playable directly in your browser without any plugins. 3D Game , . , Found . Effect . The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "WASD/Arrow keys - Control Move, - Rotate , Space - Jump( Level)in this 3D game environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "longDescription": "Astray is a mesmerizing 3D maze game created by wwwtyro using Three.js and Box2dWeb. The game features procedurally generated mazes with stunning WebGL graphics and realistic physics. Guide your ball through increasingly complex labyrinths, avoiding dead ends and finding the exit. The beautiful ambient lighting and smooth physics create an immersive puzzle-solving experience that's both relaxing and challenging. Each maze is unique, offering infinite replayability.",
+    "gameplayDescription": "Control a rolling ball through 3D mazes using WASD or arrow keys. The camera dynamically follows your ball, providing a third-person view. Use the mouse to adjust your viewing angle and plan your route. Each maze is procedurally generated, ensuring a unique experience every time. The realistic physics engine provides natural ball movement with momentum and gravity, requiring careful control to navigate tight corners and avoid falling off edges.",
     "rating": "4.4",
     "features": [
-      "Immersive 3D graphics with dynamic lighting",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Real-time physics interactions",
-      "Cross-browser compatibility"
+      "Procedurally generated 3D mazes",
+      "Realistic physics with Box2dWeb",
+      "Beautiful WebGL graphics and lighting",
+      "Smooth camera controls",
+      "Infinite replayability"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Take your time - rushing leads to falling off edges.",
+      "Use the mouse to scout ahead before moving.",
+      "Momentum matters - plan your stops and turns.",
+      "Look for visual cues in the lighting to find the path.",
+      "If stuck, restart the level for a new maze layout."
     ],
-    "developer": "WebGL Studios",
-    "releaseDate": "2025-03-22",
-    "genre": "3D Interactive, WebGL",
-    "platforms": "Browser",
+    "developer": "wwwtyro",
+    "releaseDate": "2013-05-20",
+    "genre": "Puzzle, Adventure, 3D",
+    "platforms": "Browser (WebGL)",
     "ageRating": "Everyone",
-    "languages": "English, Chinese",
+    "languages": "English",
     "similarGames": [
       {
-        "id": "platformer-adventure",
-        "title": "Platform Adventure",
-        "category": "adventure",
-        "type": "2d",
-        "thumbnail": "https://placehold.co/600x400/0891b2/ffffff?text=Platform+Adventure",
-        "rating": "3.8"
+        "id": "hexgl-3d",
+        "title": "HexGL 3D Racing",
+        "category": "racing",
+        "type": "3d",
+        "thumbnail": "https://hexgl.bkcore.com/image/model.jpg",
+        "rating": "3.7"
       },
       {
         "id": "webgl-fluid",
         "title": "WebGL Fluid Simulation",
-        "category": "puzzle",
+        "category": "simulation",
         "type": "3d",
-        "thumbnail": "https://placehold.co/600x400/3b82f6/ffffff?text=WebGL+Fluid",
-        "rating": "4.1"
+        "thumbnail": "https://raw.githubusercontent.com/PavelDoGreat/WebGL-Fluid-Simulation/master/screenshot.jpg",
+        "rating": "4.9"
       }
     ]
   },
@@ -553,35 +579,36 @@ const gamesData = [
     "category": "action",
     "type": "2d",
     "iframe": "https://slitherioplay.org/",
-    "thumbnail": "https://placehold.co/600x400/b45309/ffffff?text=Slither.io",
-    "description": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
-    "tagline": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Slither.io_logo.svg/1200px-Slither.io_logo.svg.png",
+    "description": "Become the longest slither in this massively multiplayer online snake game! Eat glowing pellets, trap other players, and grow to dominate the arena in this modern twist on the classic Snake game.",
+    "tagline": "Slither, grow, and dominate the arena!",
     "controls": [
-      "Move - Control",
-      "key/Space - Accelerate"
+      "Mouse - Control snake direction",
+      "Left Click / Space - Speed boost",
+      "Mobile: Slide finger to move"
     ],
     "categoryColor": "red",
-    "longDescription": "This classic 2D game showcases the capabilities of modern browsers, playable directly in your browser without any plugins. Multiplayer Game , Control Player . , . , . The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Move - Control , /Space - Acceleratein this 2D game environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "longDescription": "Slither.io is a massively multiplayer online game created by Steve Howse and Lowtech Studios. Inspired by the classic Snake game, it adds competitive multiplayer gameplay where players control a growing snake-like avatar in a vast arena. Consume colorful pellets to increase your size, and when other snakes collide with your body, they explode into pellets for you to eat. The goal is simple: become the longest slither on the server! With smooth controls, strategic gameplay, and the thrill of competition, Slither.io became a viral sensation.",
+    "gameplayDescription": "Glide through the arena by moving your mouse or finger. Your snake constantly follows your cursor. Click or tap to activate a speed boost - useful for escaping danger or cutting off opponents. When another snake's head touches your body, they die and leave behind pellets. Use this to trap other players by circling around them. The bigger you grow, the more cautious you need to be. The game features a global leaderboard showing the top 10 longest snakes on the server.",
     "rating": "4.6",
     "features": [
-      "Beautiful pixel art 2D visuals",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Smooth gameplay mechanics",
-      "Cross-browser compatibility"
+      "Massively multiplayer online gameplay",
+      "Smooth, responsive mouse/touch controls",
+      "Strategic gameplay with boost mechanic",
+      "Custom skins and appearances",
+      "Real-time global leaderboard"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Stay on the edges when small to avoid bigger snakes.",
+      "Circle smaller snakes to trap and eliminate them.",
+      "Use boost sparingly - it reduces your size slightly.",
+      "Collect pellets from the center for faster growth (but more risk).",
+      "When large, coil around clusters of pellets to protect them."
     ],
-    "developer": "HTML5 Game Studio",
-    "releaseDate": "2025-03-22",
-    "genre": "2D Games, HTML5",
-    "platforms": "Browser",
+    "developer": "Lowtech Studios (Steve Howse)",
+    "releaseDate": "2016-03-25",
+    "genre": "Action, Multiplayer, Arcade",
+    "platforms": "Browser, iOS, Android",
     "ageRating": "Everyone",
     "languages": "English, Chinese",
     "similarGames": []
@@ -592,37 +619,37 @@ const gamesData = [
     "category": "simulation",
     "type": "3d",
     "iframe": "https://bruno-simon.com/",
-    "thumbnail": "https://placehold.co/600x400/7c3aed/ffffff?text=3D+Car",
-    "description": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
-    "tagline": "DriveSimulation, ExplorationWorld",
+    "thumbnail": "https://assets.awwwards.com/awards/element/2020/06/5eeea37dd77a1816948132.jpg",
+    "description": "Drive a virtual car through Bruno Simon's award-winning interactive 3D portfolio. Explore a stunning WebGL world using Three.js, Cannon.js physics, and creative design - winner of Awwwards Site of the Year 2020.",
+    "tagline": "Drive through creativity - Award-winning 3D experience",
     "controls": [
-      "WASD/Arrow keys - Drive",
-      "Space -",
-      "Shift - Accelerate",
-      "R -"
+      "WASD / Arrow keys - Drive car",
+      "Space - Handbrake",
+      "Shift - Boost",
+      "R - Reset position"
     ],
     "categoryColor": "purple",
-    "longDescription": "This immersive 3D WebGL experienceshowcases the capabilities of modern browsers, playable directly in your browser without any plugins. 3D SimulationGame, Drive 3DScene . Drive , Environment . The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "WASD/Arrow keys - Drive, Space - , Shift - Accelerate, R - in this 3D game environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "longDescription": "This immersive 3D WebGL experience is the award-winning portfolio of creative developer Bruno Simon, built with Three.js for rendering, Cannon.js for physics, and Blender for 3D modeling. Winner of Awwwards Site of the Year 2020, this isn't just a website - it's an interactive adventure. Navigate a charming jeep-like vehicle through a miniature 3D world, discovering portfolio projects, social media links, and hidden easter eggs. The cozy gaming-style experience showcases the incredible possibilities of web technology while serving as a functional portfolio.",
+    "gameplayDescription": "Use WASD or arrow keys to drive your car through the 3D environment. The physics engine provides realistic vehicle handling with momentum, drifting, and collisions. Press Shift for a speed boost, Space to brake/handbrake, and R to reset if you get stuck. Explore the world to discover interactive elements - knock over social media shrine towers, navigate to project showcases, and experience one of the most creative portfolios ever made. The game automatically adjusts performance based on your device.",
     "rating": "4.5",
     "features": [
-      "Immersive 3D graphics with dynamic lighting",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Real-time physics interactions",
-      "Cross-browser compatibility"
+      "Award-winning WebGL 3D graphics (Awwwards SOTY 2020)",
+      "Realistic physics with Cannon.js",
+      "Interactive portfolio elements and easter eggs",
+      "Smooth vehicle controls and handling",
+      "Optimized performance for all devices"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Take your time to explore every corner of the world.",
+      "Try knocking over the social media towers for fun interactions.",
+      "Use the boost feature to jump over obstacles.",
+      "Look for hidden areas and easter eggs throughout the map.",
+      "Experiment with drifting and physics-based stunts."
     ],
-    "developer": "WebGL Studios",
-    "releaseDate": "2025-03-22",
-    "genre": "3D Interactive, WebGL",
-    "platforms": "Browser",
+    "developer": "Bruno Simon",
+    "releaseDate": "2019-10-01",
+    "genre": "3D Interactive, Portfolio, WebGL",
+    "platforms": "Browser (WebGL)",
     "ageRating": "Everyone",
     "languages": "English, Chinese",
     "similarGames": [
@@ -650,34 +677,34 @@ const gamesData = [
     "category": "arcade",
     "type": "2d",
     "iframe": "https://playcanv.as/p/2OlkUaxF/",
-    "thumbnail": "https://placehold.co/600x400/f97316/ffffff?text=Flappy+Bird",
-    "description": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
-    "tagline": "EasyControl, Challenge",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png",
+    "description": "Navigate a bird through endless pipes in this notoriously difficult one-button arcade game. Tap to flap your wings, avoid obstacles, and beat your high score in this addictive reflex challenge.",
+    "tagline": "Simple controls, extreme challenge",
     "controls": [
-      "Click /Space - Control"
+      "Click / Space / Tap - Flap wings"
     ],
     "categoryColor": "purple",
-    "longDescription": "This classic 2D game showcases the capabilities of modern browsers, playable directly in your browser without any plugins. ArcadeGame . Control , success Score . Easy ClickControl, Challenge . The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Click /Space - Control in this 2D game environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "longDescription": "Flappy Bird is the viral arcade sensation that became a global phenomenon. Despite being removed from app stores in 2014, its legacy lives on through browser versions. The game features deceptively simple one-button controls: tap to make the bird flap its wings and ascend. Gravity constantly pulls the bird down, and you must navigate through gaps between green pipes. The challenge is extreme - even veteran players struggle to achieve high scores. Its pixel art style and simple yet brutally difficult gameplay created an addictive experience that frustrated and captivated millions.",
+    "gameplayDescription": "Tap the screen, click your mouse, or press spacebar to make the bird flap upward. Each tap provides a small upward boost. Time your taps carefully to navigate through the narrow gaps between pipes. The bird continuously falls due to gravity, so you must maintain rhythm and control. Touch a pipe or the ground, and it's game over. Your score increases by one for each set of pipes successfully passed. The game gets progressively harder as your anxiety builds with each point scored.",
     "rating": "4.7",
     "features": [
-      "Beautiful pixel art 2D visuals",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Smooth gameplay mechanics",
-      "Cross-browser compatibility"
+      "Classic addictive arcade gameplay",
+      "Simple one-button control scheme",
+      "Retro pixel art graphics",
+      "Instant restart for quick retry",
+      "Global high score challenge"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Find your rhythm - consistent tapping is key.",
+      "Don't panic when approaching pipes - stay calm.",
+      "Tap gently; small adjustments are better than big flaps.",
+      "Practice the timing of your first flap to start strong.",
+      "Expect to fail many times - persistence is everything!"
     ],
-    "developer": "HTML5 Game Studio",
-    "releaseDate": "2025-03-22",
-    "genre": "2D Games, HTML5",
-    "platforms": "Browser",
+    "developer": "PlayCanvas / Dong Nguyen (original)",
+    "releaseDate": "2013-05-24",
+    "genre": "Arcade, Casual, Reflex",
+    "platforms": "Browser, Mobile (originally)",
     "ageRating": "Everyone",
     "languages": "English, Chinese",
     "similarGames": [
@@ -752,34 +779,34 @@ const gamesData = [
     "category": "strategy",
     "type": "2d",
     "iframe": "https://kenrick95.github.io/c4/",
-    "thumbnail": "https://placehold.co/600x400/2563eb/ffffff?text=Connect+Four",
-    "description": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
-    "tagline": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
+    "thumbnail": "https://raw.githubusercontent.com/kenrick95/c4/master/screenshot.png",
+    "description": "The classic vertical strategy game! Drop colored discs into a 7x6 grid and race to connect four in a row - horizontally, vertically, or diagonally. Play against AI or challenge a friend.",
+    "tagline": "Four in a row to win!",
     "controls": [
-      "Mouse click - Idle",
-      "-  Game"
+      "Mouse click - Drop disc in column",
+      "1-7 keys - Quick drop in column"
     ],
     "categoryColor": "emerald",
-    "longDescription": "This classic 2D game showcases the capabilities of modern browsers, playable directly in your browser without any plugins. Connect FourGame, Player 7 6 Board Idle . , . The game automatically adjusts based on your device's performance to provide the best gaming experience.",
-    "gameplayDescription": "Mouse click - Idle , - Gamein this 2D game environment. The intuitive interface allows players of all skill levels to quickly get started. As you progress, new challenges and features will unlock, keeping the experience fresh and engaging.",
+    "longDescription": "Connect Four is a classic two-player strategy game implemented by Kenrick95 using TypeScript and HTML Canvas. Players take turns dropping colored discs into a vertical grid. The objective is to be the first to form a horizontal, vertical, or diagonal line of four discs. This browser version features intelligent AI using the Minimax algorithm with alpha-beta pruning, ensuring challenging gameplay. You can play human vs AI, human vs human locally, or even watch AI vs AI matches. The clean interface and responsive design make it perfect for quick strategic battles.",
+    "gameplayDescription": "Click on any of the seven columns to drop your disc. Discs fall to the lowest available position in that column. Alternate turns with your opponent (human or AI). Plan ahead to create winning opportunities while blocking your opponent's attempts. The AI difficulty adapts based on the algorithm depth, providing both novice-friendly and expert-level challenges. The game supports multiple modes including offline multiplayer, online play, and spectator mode where two AIs battle it out.",
     "rating": "4.7",
     "features": [
-      "Beautiful pixel art 2D visuals",
-      "Responsive controls optimized for keyboard and mouse",
-      "Progressive difficulty adjustment",
-      "Smooth gameplay mechanics",
-      "Cross-browser compatibility"
+      "Intelligent AI using Minimax algorithm",
+      "Multiple game modes (vs AI, vs Human, AI vs AI)",
+      "Clean canvas-based interface",
+      "Online multiplayer support",
+      "Adjustable AI difficulty"
     ],
     "tips": [
-      "Take time to familiarize yourself with the controls before facing challenges.",
-      "Thoroughly explore the game to discover hidden features and tricks.",
-      "If you encounter performance issues, try adjusting the browser window size.",
-      "Use headphones for a more immersive audio experience.",
-      "Practice makes perfect - each game will improve your skills."
+      "Control the center column - it provides more winning opportunities.",
+      "Think two moves ahead to anticipate opponent's responses.",
+      "Create multiple threats simultaneously to force a win.",
+      "Block opponent's three-in-a-row immediately or you'll lose.",
+      "Vertical wins are easier to create than diagonal ones."
     ],
-    "developer": "HTML5 Game Studio",
-    "releaseDate": "2025-03-22",
-    "genre": "2D Games, HTML5",
+    "developer": "Kenrick95",
+    "releaseDate": "2024-03-07",
+    "genre": "Strategy, Board Game, Puzzle",
     "platforms": "Browser",
     "ageRating": "Everyone",
     "languages": "English, Chinese",
@@ -1749,7 +1776,7 @@ const gamesData = [
     "category": "word",
     "type": "2d",
     "iframe": "https://cdn.htmlgames.com/WordSearch/",
-    "thumbnail": "https://placehold.co/600x400/0ea5e9/ffffff?text=Word+Search",
+    "thumbnail": "https://cdn.htmlgames.com/WordSearch/icon-512.png",
     "description": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
     "tagline": "An engaging HTML5 game with intuitive controls and challenging gameplay. Test your skills, earn achievements, and enjoy hours of entertainment directly in your browser.",
     "controls": [
@@ -1910,7 +1937,7 @@ const gamesData = [
     "category": "shooter",
     "type": "3d",
     "iframe": "https://html-classic.itch.zone/html/4639769/index.html",
-    "thumbnail": "https://placehold.co/600x400/dc2626/ffffff?text=Space+Shooter",
+    "thumbnail": "https://img.itch.zone/aW1nLzY5MjQ0NTcucG5n/original/zKqXVj.png",
     "description": "In this exciting 3D space shooter game, pilot your spacecraft to battle against hostile forces. Use various weapons and skills to defend the galaxy from alien invasion.",
     "tagline": "Intense combat in space",
     "controls": [
@@ -2289,4 +2316,6 @@ function getGamesByType(type) {
 }
 
 // Export for Node.js usage
-module.exports = { gamesData, getCategoryColor, getGameById, getGamesByType };
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { gamesData, getCategoryColor, getGameById, getGamesByType };
+}

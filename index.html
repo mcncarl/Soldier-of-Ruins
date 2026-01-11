@@ -52,6 +52,15 @@
         gtag('config', 'G-34PXPKXXLH');
     </script>
 
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "uzk5dc2blx");
+    </script>
+
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' *;">
     <meta http-equiv="X-Frame-Options" content="ALLOWALL">
@@ -296,6 +305,9 @@
             border: 1px solid #a855f7;
         }
     </style>
+
+    <!-- Adsterra Popunder Ad -->
+    <script src="https://pl28449213.effectivegatecpm.com/4b/ba/e2/4bbae2c6f190c24af6b5a8aeb8a9ffc0.js"></script>
 </head>
 
 <body class="min-h-screen relative">
@@ -322,12 +334,12 @@
                 <nav class="flex mt-4 md:mt-0 space-x-6">
                     <a href="index.html"
                         class="cyber-btn text-white hover:text-teal-400 transition-colors heading-font">Home</a>
-                    <a href="#"
-                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Explore</a>
-                    <a href="#" class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">New
-                        Games</a>
-                    <a href="#"
-                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Popular</a>
+                    <a href="about.html"
+                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">About</a>
+                    <a href="contact.html"
+                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Contact</a>
+                    <a href="faq.html"
+                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">FAQ</a>
                 </nav>
             </div>
         </div>
@@ -360,46 +372,74 @@
             </div>
         </div>
 
-        <!-- Hero Section -->
-        <section class="hero-gradient rounded-xl mb-10 overflow-hidden tech-border">
-            <div class="p-8 md:p-12 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 heading-font glow-text">
-                    Discover Amazing HTML5 Game World
-                </h1>
-                <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-8 body-font">
-                    Play various exciting 2D and 3D games directly in your browser, no download required.
-                </p>
+        <!-- Hero Banner with Featured Game Carousel -->
+        <section class="mb-12">
+            <div class="hero-gradient rounded-xl overflow-hidden tech-border shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-6 p-8 md:p-12">
+                    <!-- Left: Text Content -->
+                    <div class="flex flex-col justify-center">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 heading-font glow-text">
+                            Play Premium HTML5 Games
+                        </h1>
+                        <p class="text-xl text-blue-100 mb-6 body-font">
+                            Discover 40+ high-quality browser games. No downloads, no installations - just pure gaming
+                            fun!
+                        </p>
+                        <div class="flex flex-wrap gap-4 mb-6">
+                            <div class="flex items-center bg-purple-900/40 px-4 py-2 rounded-lg">
+                                <i class="fas fa-cube text-purple-400 mr-2"></i>
+                                <span class="text-white">3D Graphics</span>
+                            </div>
+                            <div class="flex items-center bg-blue-900/40 px-4 py-2 rounded-lg">
+                                <i class="fas fa-mobile-alt text-blue-400 mr-2"></i>
+                                <span class="text-white">Mobile Ready</span>
+                            </div>
+                            <div class="flex items-center bg-teal-900/40 px-4 py-2 rounded-lg">
+                                <i class="fas fa-bolt text-teal-400 mr-2"></i>
+                                <span class="text-white">Instant Play</span>
+                            </div>
+                        </div>
 
-                <!-- Search Bar -->
-                <div class="max-w-2xl mx-auto">
-                    <div class="relative">
-                        <label for="search-input" class="sr-only">Search games</label>
-                        <input type="text" id="search-input" placeholder="Search games..." aria-label="Search for games"
-                            class="w-full px-5 py-4 rounded-md shadow-md bg-gray-900/80 border border-purple-500/30 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
-                        <button onclick="searchGames()" aria-label="Search"
-                            class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-md transition-colors">
-                            <i class="fas fa-search" aria-hidden="true"></i>
-                        </button>
+                        <!-- Search Bar -->
+                        <div class="max-w-xl">
+                            <div class="relative">
+                                <label for="search-input" class="sr-only">Search games</label>
+                                <input type="text" id="search-input" placeholder="Search for games..."
+                                    aria-label="Search for games"
+                                    class="w-full px-5 py-4 rounded-lg shadow-md bg-gray-900/80 border border-purple-500/30 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                <button onclick="searchGames()" aria-label="Search"
+                                    class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md transition-colors">
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Featured Game Preview -->
+                    <div class="flex items-center justify-center">
+                        <div id="hero-game-preview" class="w-full max-w-md">
+                            <div class="bg-gray-900/60 rounded-lg p-4 backdrop-blur-sm border border-purple-500/20">
+                                <div class="aspect-video bg-gray-800 rounded-lg mb-4 overflow-hidden relative">
+                                    <img id="hero-game-image" src="" alt="Featured Game"
+                                        class="w-full h-full object-cover">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                    <div class="absolute bottom-4 left-4 right-4">
+                                        <h3 id="hero-game-title" class="text-white text-xl font-bold heading-font mb-1">
+                                        </h3>
+                                        <p id="hero-game-desc" class="text-gray-300 text-sm"></p>
+                                    </div>
+                                </div>
+                                <a id="hero-game-link" href="#"
+                                    class="block w-full bg-gradient-to-r from-purple-600 to-teal-500 hover:from-purple-700 hover:to-teal-600 text-white text-center py-3 rounded-lg font-bold transition-all transform hover:scale-105">
+                                    Play Now <i class="fas fa-play ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Recommended Games -->
-        <section class="mb-8">
-            <div class="max-w-4xl mx-auto">
-                <div
-                    class="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-lg p-4 border border-purple-500/40 backdrop-blur-sm shadow-lg shadow-purple-800/10">
-                    <h3 class="text-lg font-bold text-white mb-3 heading-font flex items-center">
-                        <i class="fas fa-cube text-purple-500 mr-2"></i>
-                        3D Premium Games
-                    </h3>
-                    <div id="recommended-games-container" class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <!-- Games will be dynamically loaded here -->
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Type Selector -->
         <section class="mb-8">
@@ -415,7 +455,7 @@
                 <div class="flex items-center border-l border-gray-700 pl-2 ml-2">
                     <span class="text-gray-400 text-sm mr-2">Game Types:</span>
                     <button
-                        class="category-button py-1 px-3 bg-gray-800 hover:bg-gray-700 text-blue-400 rounded-md type-filter active"
+                        class="category-button py-1 px-3 bg-purple-700 hover:bg-gray-700 text-blue-400 rounded-md type-filter active"
                         data-type="all">All</button>
                     <button
                         class="category-button py-1 px-3 bg-gray-800 hover:bg-gray-700 text-blue-400 rounded-md type-filter"
@@ -498,6 +538,25 @@
                     <span class="text-purple-400">Ne</span><span class="text-teal-400">X</span><span
                         class="text-purple-400">uS</span>
                 </div>
+                <nav class="flex flex-wrap justify-center gap-4 text-sm mb-4">
+                    <a href="about.html" class="text-gray-400 hover:text-teal-400 transition-colors">About Us</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="privacy.html" class="text-gray-400 hover:text-teal-400 transition-colors">Privacy
+                        Policy</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="terms.html" class="text-gray-400 hover:text-teal-400 transition-colors">Terms of
+                        Service</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="cookie-policy.html" class="text-gray-400 hover:text-teal-400 transition-colors">Cookie
+                        Policy</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="contact.html" class="text-gray-400 hover:text-teal-400 transition-colors">Contact</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="faq.html" class="text-gray-400 hover:text-teal-400 transition-colors">FAQ</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="javascript:void(0)" id="cookie-settings-link"
+                        class="text-gray-400 hover:text-teal-400 transition-colors">Cookie Settings</a>
+                </nav>
                 <p class="text-gray-400 text-sm">
                     &copy; 2025 NeXuS. All rights reserved. Best HTML5 web games platform.
                 </p>
@@ -568,8 +627,14 @@
             // Load recommended games
             loadRecommendedGames();
 
+            // Load hero game
+            loadHeroGame();
+
             // Load all games
             renderGames();
+
+            // Update counts on page load
+            updateFilteredCount();
         });
 
         // Load recommended games (top 6 by rating)
@@ -609,6 +674,43 @@
 
                 container.appendChild(gameCard);
             });
+        }
+
+        // Load Hero Featured Game
+        function loadHeroGame() {
+            // Priority list of games with high-quality customized content
+            const highlightIds = [
+                'astray-3d',
+                'slither-io',
+                'flappy-bird',
+                'connect-four',
+                '3d-car-simulator',
+                'soldier-of-ruins'
+            ];
+
+            // Try to find one of the highlight games
+            let heroGame = gamesData.find(g => highlightIds.includes(g.id));
+
+            // Fallback to high rated games if none found (unlikely)
+            if (!heroGame) {
+                const featuredGames = gamesData.filter(g => parseFloat(g.rating) >= 4.5 && !g.thumbnail.includes('placehold'));
+                heroGame = featuredGames[Math.floor(Math.random() * featuredGames.length)] || gamesData[0];
+            }
+
+            if (heroGame) {
+                const imgElement = document.getElementById('hero-game-image');
+                imgElement.src = heroGame.thumbnail;
+                imgElement.alt = heroGame.title;
+                document.getElementById('hero-game-title').textContent = heroGame.title;
+                document.getElementById('hero-game-desc').textContent = heroGame.tagline;
+                document.getElementById('hero-game-link').href = `game.html?id=${heroGame.id}`;
+
+                // Add error handling for image
+                imgElement.onerror = function () {
+                    const fallbackColor = getCategoryColor(heroGame.category) === 'purple' ? '8b5cf6' : '3b82f6';
+                    this.src = `https://placehold.co/800x450/${fallbackColor}/ffffff?text=${encodeURIComponent(heroGame.title)}`;
+                };
+            }
         }
 
         // Variables
@@ -874,6 +976,9 @@
             }
         }
     </script>
+
+    <!-- Cookie Consent Banner -->
+    <script src="cookie-consent.js"></script>
 </body>
 
 </html>

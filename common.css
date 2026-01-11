@@ -19,7 +19,7 @@ body {
     font-family: 'Exo', sans-serif;
     background-color: var(--background);
     color: var(--text-primary);
-    background-image: 
+    background-image:
         radial-gradient(circle at 25px 25px, rgba(98, 0, 234, 0.07) 2%, transparent 0%),
         radial-gradient(circle at 75px 75px, rgba(3, 218, 198, 0.05) 2%, transparent 0%);
     background-size: 100px 100px;
@@ -257,8 +257,13 @@ body {
 }
 
 @keyframes twinkle {
-    0% { opacity: 0.3; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .line {
@@ -270,8 +275,13 @@ body {
 }
 
 @keyframes pulse {
-    0% { opacity: 0.1; }
-    100% { opacity: 0.5; }
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
 }
 
 /* Pulse Background Animation */
@@ -283,6 +293,7 @@ body {
     0% {
         background-position: 0% 50%;
     }
+
     100% {
         background-position: 100% 50%;
     }
@@ -292,7 +303,12 @@ body {
 .iframe-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    overflow: hidden;
+    /* 隐藏溢出内容,防止滚动条 */
+    background-color: #000;
+    /* 黑色背景避免加载时闪烁 */
 }
 
 .iframe-container iframe {
@@ -302,23 +318,63 @@ body {
     width: 100%;
     height: 100%;
     border: 0;
+    outline: none;
+    /* 移除焦点轮廓 */
+}
+
+/* 全屏按钮样式 */
+.fullscreen-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    background: rgba(98, 0, 234, 0.9);
+    border: 1px solid rgba(187, 134, 252, 0.5);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.fullscreen-btn:hover {
+    background: rgba(98, 0, 234, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(98, 0, 234, 0.6), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fullscreen-btn:active {
+    transform: translateY(0);
+}
+
+.fullscreen-btn i {
+    font-size: 16px;
 }
 
 /* Responsive iframe styles */
 @media (max-width: 768px) {
     .iframe-container {
-        padding-bottom: 75%; /* Slightly higher ratio on mobile devices */
+        padding-bottom: 75%;
+        /* Slightly higher ratio on mobile devices */
     }
 }
 
 .responsive-iframe-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
 }
 
 @media (max-width: 640px) {
     .responsive-iframe-container {
-        padding-bottom: 75%; /* Higher ratio on mobile devices */
+        padding-bottom: 75%;
+        /* Higher ratio on mobile devices */
     }
 }

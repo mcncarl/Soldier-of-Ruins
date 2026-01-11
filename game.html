@@ -53,6 +53,24 @@
     <!-- Game Data -->
     <script src="games-data.js"></script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-34PXPKXXLH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-34PXPKXXLH');
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "uzk5dc2blx");
+    </script>
+
     <!-- JSON-LD Structured Data (will be dynamically updated) -->
     <script type="application/ld+json" id="game-jsonld">
     {
@@ -74,6 +92,9 @@
         }
     }
     </script>
+
+    <!-- Adsterra Popunder Ad -->
+    <script src="https://pl28449213.effectivegatecpm.com/4b/ba/e2/4bbae2c6f190c24af6b5a8aeb8a9ffc0.js"></script>
 </head>
 
 <body class="min-h-screen">
@@ -95,12 +116,12 @@
                 <nav class="flex mt-4 md:mt-0 space-x-6">
                     <a href="index.html"
                         class="cyber-btn text-white hover:text-teal-400 transition-colors heading-font">Home</a>
-                    <a href="#"
-                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Explore</a>
-                    <a href="#" class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">New
-                        Games</a>
-                    <a href="#"
-                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Popular</a>
+                    <a href="about.html"
+                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">About</a>
+                    <a href="contact.html"
+                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">Contact</a>
+                    <a href="faq.html"
+                        class="cyber-btn text-gray-400 hover:text-teal-400 transition-colors heading-font">FAQ</a>
                 </nav>
             </div>
         </div>
@@ -152,10 +173,14 @@
             <!-- Main content -->
             <div class="lg:col-span-2">
                 <!-- Game Iframe -->
-                <div class="game-detail-card rounded-xl overflow-hidden mb-6">
-                    <div class="iframe-container">
-                        <iframe id="game-iframe" src="about:blank" allowfullscreen title="Game Player"
-                            loading="lazy"></iframe>
+                <div class="game-detail-card rounded-xl overflow-hidden mb-6" style="overflow: hidden;">
+                    <div class="iframe-container" id="game-container">
+                        <button class="fullscreen-btn" id="fullscreen-btn" title="全屏播放 / Fullscreen">
+                            <i class="fas fa-expand"></i>
+                            <span>全屏</span>
+                        </button>
+                        <iframe id="game-iframe" src="about:blank" allowfullscreen scrolling="no" title="Game Player"
+                            loading="lazy" style="overflow: hidden;"></iframe>
                     </div>
                 </div>
 
@@ -470,6 +495,69 @@
                 noSimilarGames.className = 'text-gray-400 text-center py-4';
                 noSimilarGames.textContent = 'No recommended games available';
                 similarGamesContainer.appendChild(noSimilarGames);
+            }
+
+            // 全屏功能实现
+            const fullscreenBtn = document.getElementById('fullscreen-btn');
+            const gameContainer = document.getElementById('game-container');
+
+            if (fullscreenBtn && gameContainer) {
+                fullscreenBtn.addEventListener('click', function () {
+                    toggleFullscreen();
+                });
+
+                // 监听全屏状态变化
+                document.addEventListener('fullscreenchange', updateFullscreenButton);
+                document.addEventListener('webkitfullscreenchange', updateFullscreenButton);
+                document.addEventListener('mozfullscreenchange', updateFullscreenButton);
+                document.addEventListener('MSFullscreenChange', updateFullscreenButton);
+            }
+
+            function toggleFullscreen() {
+                if (!document.fullscreenElement &&
+                    !document.webkitFullscreenElement &&
+                    !document.mozFullScreenElement &&
+                    !document.msFullscreenElement) {
+                    // 进入全屏
+                    if (gameContainer.requestFullscreen) {
+                        gameContainer.requestFullscreen();
+                    } else if (gameContainer.webkitRequestFullscreen) {
+                        gameContainer.webkitRequestFullscreen();
+                    } else if (gameContainer.mozRequestFullScreen) {
+                        gameContainer.mozRequestFullScreen();
+                    } else if (gameContainer.msRequestFullscreen) {
+                        gameContainer.msRequestFullscreen();
+                    }
+                } else {
+                    // 退出全屏
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    } else if (document.webkitExitFullscreen) {
+                        document.webkitExitFullscreen();
+                    } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                    } else if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                    }
+                }
+            }
+
+            function updateFullscreenButton() {
+                const isFullscreen = document.fullscreenElement ||
+                    document.webkitFullscreenElement ||
+                    document.mozFullScreenElement ||
+                    document.msFullscreenElement;
+
+                const icon = fullscreenBtn.querySelector('i');
+                const text = fullscreenBtn.querySelector('span');
+
+                if (isFullscreen) {
+                    icon.className = 'fas fa-compress';
+                    text.textContent = '退出';
+                } else {
+                    icon.className = 'fas fa-expand';
+                    text.textContent = '全屏';
+                }
             }
         });
 
